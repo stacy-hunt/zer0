@@ -1,0 +1,425 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: normal 1em/1.38 HelveticaNeue;
+  color: #a3a3a3;
+}
+
+.column-headers {
+  float: left;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  height: 38px;
+}
+
+.filter {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 67px;
+  z-index: 8;
+  width: 154px;
+  height: 38px;
+  margin: auto 0;
+  border-radius: 19px;
+  background: url('../images/Fliter.svg') rgba(115, 201, 241, 0.06);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 26px 50%;
+  font-family: 'Univia Pro';
+  font-size: 0.875em;
+  font-weight: 400;
+  text-align: center;
+  color: #727272;
+}
+
+.filter:hover {
+  background-color: rgba(115, 201, 241, 0.32);
+  color: #ededed;
+}
+
+.graph {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 118px;
+  height: auto;
+  margin: auto 0;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 1440px;
+  height: auto;
+  overflow: hidden;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 85px;
+  width: 46px;
+  height: auto;
+  margin: auto 0;
+  overflow: hidden;
+}
+
+.network {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 182px;
+  height: 22px;
+  margin: auto 0;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.networks {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 170px;
+  height: 38px;
+  border: 1px solid #78d0f8;
+  border-radius: 19px;
+  background-color: rgba(120, 208, 248, 0.15);
+  font-family: 'Univia Pro';
+  font-size: 0.875em;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.networks:hover {
+  background-color: rgba(120, 208, 248, 0.32);
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 22px;
+  margin: auto 0;
+  padding-left: 29px;
+  font-size: 1em;
+  text-align: center;
+  color: #a3a3a3;
+}
+
+.row {
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 81px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.table {
+  position: relative;
+  float: left;
+  z-index: 43;
+  width: 1144px;
+  height: 397px;
+  margin: 44px 0 0 111px;
+  background-color: rgba(44, 86, 112, 0);
+}
+
+.table-body {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-top: 26px;
+  padding-top: 25px;
+  background-color: rgba(44, 86, 112, 0.3);
+}
+
+.table-header {
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 38px;
+  margin-top: 27px;
+}
+
+.table-header-button {
+  position: absolute;
+  top: 10px;
+  font-family: 'Univia Pro';
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #727272;
+}
+
+.table-title {
+  float: left;
+  margin-top: 1px;
+  font-family: 'Univia Pro';
+  font-size: 1.25em;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.template {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: auto;
+  overflow: hidden;
+}
+
+.text {
+  float: left;
+  font-family: 'Univia Pro';
+  font-size: 0.875em;
+  font-weight: 400;
+  text-align: center;
+  color: #a3a3a3;
+}
+
+.market-cap,
+.token,
+.volume {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 22px;
+  margin: auto 0;
+  font-size: 1em;
+  text-align: center;
+  color: #ffffff;
+}
+
+._24h {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 635px;
+  height: 22px;
+  margin: auto 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+._7d {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 736px;
+  height: 22px;
+  margin: auto 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+._button {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-size: 16px 17px;
+  background-position: center center;
+  background-color: rgba(222, 222, 222, 0);
+  font-family: Helvetica;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.container-1 {
+  right: 0;
+  z-index: 11;
+  width: 222px;
+}
+
+.container-2 {
+  left: 0;
+  z-index: 7;
+  width: 488px;
+}
+
+.graph-1 {
+  left: 973px;
+  z-index: 30;
+}
+
+.graph-2 {
+  left: 85.2641499125%;
+  z-index: 40;
+}
+
+.logo-1 {
+  z-index: 24;
+}
+
+.logo-2 {
+  z-index: 39;
+}
+
+.market-cap-1 {
+  left: 846px;
+  z-index: 29;
+}
+
+.market-cap-2 {
+  left: 848px;
+  z-index: 38;
+}
+
+.network-1 {
+  z-index: 22;
+}
+
+.network-2 {
+  z-index: 32;
+}
+
+.number-1 {
+  z-index: 23;
+}
+
+.number-2 {
+  z-index: 33;
+}
+
+.row-1 {
+  margin-top: 25px;
+  background-color: rgba(9, 17, 33, 0.1);
+}
+
+.row-2 {
+  background-color: rgba(9, 17, 33, 0);
+}
+
+.table-header-button-1 {
+  left: 424px;
+  z-index: 6;
+}
+
+.table-header-button-2 {
+  left: 322px;
+  z-index: 5;
+}
+
+.table-header-button-3 {
+  left: 226px;
+  z-index: 4;
+}
+
+.text-1 {
+  margin-left: 23px;
+}
+
+.text-2 {
+  margin-left: 150px;
+}
+
+.text-3 {
+  margin-left: 79px;
+}
+
+.text-4 {
+  margin-left: 100px;
+}
+
+.text-5 {
+  margin-left: 138px;
+}
+
+.text-6 {
+  margin-left: 85px;
+}
+
+.text-7 {
+  margin-left: 71px;
+}
+
+.text-8 {
+  margin-left: 104px;
+}
+
+.token-1 {
+  left: 322px;
+  z-index: 25;
+}
+
+.token-2 {
+  left: 323px;
+  z-index: 34;
+}
+
+.volume-1 {
+  left: 458px;
+  z-index: 26;
+}
+
+.volume-2 {
+  left: 460px;
+  z-index: 35;
+}
+
+.container ._button-1 {
+  left: 31px;
+  z-index: 10;
+  background-image: url('../images/Grid-View.png');
+}
+
+.container ._button-1:hover {
+  background-color: rgba(222, 222, 222, 0.13);
+}
+
+.container ._button-2 {
+  left: 0;
+  z-index: 9;
+  background-image: url('../images/List-view.png');
+}
+
+.container ._button-2:hover {
+  background-color: rgba(222, 222, 222, 0.3);
+}
+
+.row ._24h-1 {
+  z-index: 27;
+  color: #f45d64;
+}
+
+.row ._24h-2 {
+  z-index: 37;
+  color: #78d0f8;
+}
+
+.row ._7d-1 {
+  z-index: 28;
+  color: #78d0f8;
+}
+
+.row ._7d-2 {
+  z-index: 36;
+  color: #f45d64;
+}
