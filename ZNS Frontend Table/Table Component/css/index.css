@@ -15,6 +15,29 @@ body {
   height: 38px;
 }
 
+.dialog {
+  display: none;
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  z-index: 43;
+  width: 377px;
+  min-height: 69px;
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  border: 1px solid rgb(28, 101, 156);
+  border-radius: 5px;
+  background-color: rgba(19, 32, 39, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-family: Helvetica;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
 .filter {
   display: block;
   position: absolute;
@@ -132,10 +155,14 @@ body {
   padding-bottom: 16px;
 }
 
+.row:hover {
+  background-color: rgba(9, 17, 33, 0.4);
+}
+
 .table {
   position: relative;
   float: left;
-  z-index: 43;
+  z-index: 44;
   width: 1144px;
   height: 397px;
   margin: 44px 0 0 111px;
@@ -143,8 +170,10 @@ body {
 }
 
 .table-body {
+  position: relative;
   float: left;
   clear: both;
+  z-index: 42;
   width: 100%;
   margin-top: 26px;
   padding-top: 25px;
@@ -317,6 +346,26 @@ body {
   background-color: rgba(9, 17, 33, 0);
 }
 
+.selectable-2 {
+  z-index: 28;
+  color: #78d0f8;
+}
+
+.selectable-3 {
+  z-index: 27;
+  color: #f45d64;
+}
+
+.selectable-8 {
+  z-index: 37;
+  color: #78d0f8;
+}
+
+.selectable-9 {
+  z-index: 36;
+  color: #f45d64;
+}
+
 .table-header-button-1 {
   left: 424px;
   z-index: 6;
@@ -402,24 +451,4 @@ body {
 
 .container ._button-2:hover {
   background-color: rgba(222, 222, 222, 0.3);
-}
-
-.row ._24h-1 {
-  z-index: 27;
-  color: #f45d64;
-}
-
-.row ._24h-2 {
-  z-index: 37;
-  color: #78d0f8;
-}
-
-.row ._7d-1 {
-  z-index: 28;
-  color: #78d0f8;
-}
-
-.row ._7d-2 {
-  z-index: 36;
-  color: #f45d64;
 }
