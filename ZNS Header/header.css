@@ -5,7 +5,8 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	background-color: #151f27;
+
+	background-color: #151f27; /* Replace with textured background */
 
 	/* Just here to illustrate the actual size of the header */
 	/*border-bottom: 1px solid black;*/
@@ -61,7 +62,7 @@ nav .search-bar {
 	width: 330px;
 	background-color: rgba(115, 201, 241, 0.06);
 	border-radius: 31px;
-	padding: 14px 31px 14px 31px;
+	padding: 15px 31px 13px 31px;
 
 	/* Text */
 	text-align: left;
