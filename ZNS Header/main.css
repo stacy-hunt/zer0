@@ -29,9 +29,9 @@ button {
 
 .content {
 	display: flex;
+	padding: 131px 25px 25px 205px;
 }
 
 .main {
 	flex: 1;
-	padding: 131px 25px 25px 25px;
 }
