@@ -1,0 +1,118 @@
+header {
+	/* Not sure if it's an absolute or static header */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+
+	background-color: #151f27; /* Replace with textured background */
+
+	/* Just here to illustrate the actual size of the header */
+	/*border-bottom: 1px solid black;*/
+}
+
+/* Nav Alignments */
+
+nav {
+	display: flex;
+	padding: 21px 25px 21px 60px;
+}
+
+nav > div {
+	flex: 1;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+nav > div > * {
+	/* Maybe not the best solution long term but works for now
+	until we have other breakpoints designed */
+	flex-shrink: 0;
+}
+
+nav > div:nth-child(1) {
+}
+
+nav > div:nth-child(2) {
+	text-align: center;
+}
+
+nav > div:nth-child(3) {
+	justify-content: flex-end;
+}
+
+/* Nav logo and breadcrumb */
+
+nav .logo {
+	height: 60px;
+	width: 60px;
+}
+
+nav .breadcrumb {
+	margin-left: 16px;
+	color: #b5b5b5;
+	letter-spacing: 0;
+}
+
+/* Search Bar */
+
+nav .search-bar {
+	width: 330px;
+	background-color: rgba(115, 201, 241, 0.06);
+	border-radius: 31px;
+	padding: 15px 31px 13px 31px;
+
+	/* Text */
+	text-align: left;
+	font-size: 16px;
+	color: white;
+}
+
+nav .search-bar::placeholder {
+	color: #727272;
+	font-size: 16px;
+}
+
+/* Nav Links */
+nav > div:nth-child(3) > *:not(:first-child) {
+	margin-left: 29px;
+}
+
+nav > div:nth-child(3) > a {
+	color: #cccccc;
+}
+
+/* Create Network Button */
+nav button.create-network {
+	display: flex;
+	align-items: center;
+
+	padding: 11px 24px 11px 27px;
+
+	font-size: 16px;
+	color: white;
+
+	background-color: rgba(0,0,0,0);
+	box-shadow: 4px 6px 17px 0px rgba(0, 0, 0, 0.45);
+
+	/* Border */
+	border-radius: 24px;
+	border: 2px solid #78d0f8;
+	border-width: 2px 0;
+}
+
+nav button.create-network img {
+	height: 25px;
+	width: 25px;
+	margin-left: 8px;
+}
+
+/* Darkmode Toggle */
+nav button.darkmode-toggle {
+	height: 41px;
+	width: 41px;
+	background-color: #172c3c;
+	border-radius: 50%;
+}
