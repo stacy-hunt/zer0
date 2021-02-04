@@ -17,7 +17,8 @@
 </head>
 
 <body>
-
+    <!-- Uncomment below line for guide image -->
+	<!-- <img id='check' src='assets/ZNS::Explorer@2x.png' /> -->
 	<header>
 		<nav>
 			<div>
@@ -25,12 +26,15 @@
 				<a class='breadcrumb'>0::</a>
 			</div>
 			<div>
-				<input class='search-bar' type='text' placeholder='Search'/>
+				<div class='search-bar'>
+					<input type='text' placeholder='Search'>
+					<button></button>
+				</div>
 			</div>
 			<div>
 				<a>Connect Wallet</a>
-				<button class='create-network'>Create Network<img src='' /></button>
-				<button class='darkmode-toggle'></button>
+				<button class='create-network'>Create Network<img src='assets/Graphic.png' /></button>
+				<button style='background-image: url("assets/Round2.png")' class='darkmode-toggle'></button>
 			</div>
 		</nav>
 	</header>
@@ -38,20 +42,20 @@
 	<div class='side-bar'>
 		<div class='navigator'>
 			<ul class='dots'>
-				<li class='selected'></li>
 				<li></li>
+				<li class='selected'></li>
 				<li></li>
 				<li></li>
 			</ul>
 			<ul class='icons'>
-				<li class='selected'></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li style='background-image: url("assets/TV:ICON.png")'></li>
+				<li style='background-image: url("assets/Feed:Icon.png")' class='selected'></li>
+				<li style='background-image: url("assets/PIN:ICON.png")'></li>
+				<li style='background-image: url("assets/Multiverse:Button.png")'></li>
 			</ul>
 		</div>
 		<div class='profile'>
-			<img class='dp'>
+			<img src='assets/elon.jpg' class='dp'>
 			<ul>
 				<li></li>
 				<li></li>
