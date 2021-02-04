@@ -61,6 +61,10 @@ nav .breadcrumb {
 /* Search Bar */
 
 nav .search-bar {
+	position: relative;
+}
+
+nav .search-bar input {
 	width: 330px;
 	background-color: rgba(115, 201, 241, 0.06);
 	border-radius: 31px;
@@ -72,7 +76,21 @@ nav .search-bar {
 	color: white;
 }
 
-nav .search-bar::placeholder {
+nav .search-bar button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 47px;
+	width: 49px;
+	border-radius: 31px;
+	background-color: #172c3c;
+	background-image: url('assets/loupe.svg');
+	background-position: center;
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+}
+
+nav .search-bar input::placeholder {
 	color: #727272;
 	font-size: 16px;
 }
