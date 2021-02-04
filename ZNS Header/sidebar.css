@@ -1,0 +1,78 @@
+.side-bar {
+	height: 100vh;
+	flex-basis: 180px;
+
+	padding: 35px 0;
+
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	position: relative;
+
+	/*border-right: 1px solid black;*/
+}
+
+/* Navigator Styling */
+.side-bar > .navigator {
+	display: flex;
+	align-items: center;
+}
+
+.side-bar > .navigator > .icons {
+	padding-left: 30px;
+}
+
+.side-bar > .navigator > .dots {
+	padding-left: 18px;
+	flex-basis: 12px;
+}
+
+.side-bar > .navigator li {
+	cursor: pointer;
+}
+
+.side-bar > .navigator .dots > li {
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.19);
+}
+
+.side-bar > .navigator .dots > li:not(:first-of-type) {
+	margin-top: 16px;
+}
+
+.side-bar > .navigator .dots > li.selected {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.side-bar > .navigator .icons > li {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background-color: rgba(42, 46, 50, 0.33);
+}
+
+.side-bar > .navigator .icons > li:not(:first-of-type) {
+	margin-top: 16px;
+}
+
+.side-bar > .navigator .icons > li.selected {
+	background-color: #1b1b1d;
+	border: 2px solid #78d0f8;
+}
+
+/* Profile Styling */
+
+.side-bar .profile {
+	position: absolute;
+	left: 60px;
+	bottom: 35px;
+}
+
+.side-bar .profile .dp {
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: white;
+}

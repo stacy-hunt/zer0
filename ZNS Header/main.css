@@ -1,0 +1,37 @@
+/* Not sure how you guys are handling fonts so I'll just use system font */
+body, button, input {
+	font-family: 'Univia Pro', sans-serif;
+	letter-spacing: 0.2px;
+}
+
+body {
+	background-color: #151f27;
+	height: 100vh;
+	width: 100%;
+
+	/* Breakpoint in Framer */
+	min-width: 1440px;
+
+	color: #cccccc;
+}
+
+a {
+	cursor: pointer;
+}
+
+input {
+	border: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+.content {
+	display: flex;
+}
+
+.main {
+	flex: 1;
+	padding: 131px 25px 25px 25px;
+}
