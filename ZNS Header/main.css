@@ -4,6 +4,17 @@ body, button, input {
 	letter-spacing: 0.2px;
 }
 
+/* Set display: block; to enable overlay image */
+#check {
+    width: 100%;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 100;
+}
+
 body {
 	background-color: #151f27; /* Replace with textured background */
 

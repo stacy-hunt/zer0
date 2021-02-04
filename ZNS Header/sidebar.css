@@ -47,7 +47,7 @@
 
 /* Icons */
 .side-bar > .navigator > .icons {
-	padding-left: 30px;
+	padding-left: 34px;
 }
 
 .side-bar > .navigator .icons > li {
@@ -55,6 +55,9 @@
 	width: 60px;
 	border-radius: 50%;
 	background-color: rgba(42, 46, 50, 0.33);
+
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .side-bar > .navigator .icons > li:not(:first-of-type) {
