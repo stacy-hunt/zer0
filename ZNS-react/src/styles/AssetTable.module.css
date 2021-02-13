@@ -1,0 +1,54 @@
+.table {
+	width: 100%;
+
+	background-color: rgba(244, 93, 100, 0.14);
+  	border-radius: 12px 75px 12px 0px;
+  	border: 2px solid #f45d64;
+  	border-collapse: separate;
+}
+
+/* Generic row styling */
+.table tr:not(:first-child) {
+	height: 172px;
+}
+
+.table tr:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table tr .asset {
+	width: 208px;
+	height: 140px;
+	border-radius: 12px;
+  	border: 2px solid #f45d64;
+
+  	background-position: center;
+  	background-size: cover;
+}
+
+/* Data row styling */
+.table td {
+	vertical-align: middle;
+}
+
+/* Header styling */
+.table th {
+	color: #a3a3a3;
+
+	padding-top: 28px;
+	padding-bottom: 27px;
+
+	text-align: left;
+}
+
+.table th:not(:last-child),.table td:not(:last-child) {
+	padding-right: 40px;
+}
+
+.table th:last-child,.table td:last-child {
+	padding-right: 40px;
+}
+
+.table th:first-child,.table td:first-child {
+	padding-left: 26px;
+}

@@ -1,0 +1,36 @@
+.searchBar {
+	position: relative;
+}
+
+.searchBar input {
+	width: 330px;
+	height: 47px;
+	background-color: rgba(244, 93, 100, 0.1);
+	border-radius: 31px;
+	padding: 15px 63px 13px 31px;
+
+	/* Text */
+	text-align: left;
+	font-size: 16px;
+	color: white;
+}
+
+.searchBar button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 47px;
+	width: 47px;
+	border-radius: 31px;
+	background-color: rgba(244, 93, 100, 0.3);
+	box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.15);
+	/*background-image: url('assets/loupe.svg');*/
+	background-position: center;
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+}
+
+.searchBar input::placeholder {
+	color: white;
+	font-size: 16px;
+}
