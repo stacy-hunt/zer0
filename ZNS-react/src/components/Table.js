@@ -5,14 +5,16 @@ import TemplateAsset from '../assets/wilder.jpg'
 import AssetTableStyles from '../styles/AssetTable.module.css'
 import ButtonStyles from '../styles/Button.module.css'
 
+import graph from '../assets/graph.svg'
+
 const Table = (props) => {
 
     return (
-        <table className={AssetTableStyles.table}>
+        <table className={AssetTableStyles.table + ' purpleBackground blur'}>
             <tr>
-                <th>#</th>
-                <th>Asset</th>
-                <th>Name</th>
+                <h5 className={AssetTableStyles.location} >0:/Wilder.frank</h5>
+                <th></th>
+                <th></th>
                 <th>Volume</th>
                 <th>24h</th>
                 <th>7d</th>
@@ -22,15 +24,15 @@ const Table = (props) => {
             </tr>
             {props.data.map((asset, i) =>
                 <tr>
-                    <td>{i}</td>
+                    <td style={{fontSize: 24}}>{i + 1}</td>
                     <td><div style={{backgroundImage: `url(${TemplateAsset})`}} className={AssetTableStyles.asset}></div></td>
-                    <td>{asset.name}</td>
+                    <td style={{fontSize: 24}}>{asset.name}</td>
                     <td>{'$' + asset.volume.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
-                    <td style={{color: asset.changeDay < 0 ? '#f45d64' : '#78d0f8'}}>{asset.changeDay}%</td>
-                    <td style={{color: asset.changeWeek < 0 ? '#f45d64' : '#78d0f8'}}>{asset.changeWeek}%</td>
+                    <td style={{color: asset.changeDay < 0 ? '#BB6BD9' : '#56CCF2'}}>{asset.changeDay}%</td>
+                    <td style={{color: asset.changeWeek < 0 ? '#BB6BD9' : '#56CCF2'}}>{asset.changeWeek}%</td>
                     <td>{'$' + asset.marketCap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
-                    <td>[GRAPH HERE]</td>
-                    <td><button className={ButtonStyles.trade}>{'$' + asset.trade.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</button></td>
+                    <td><img src={graph} /></td>
+                    <td><button style={{width: 174, fontSize: 22}} className={ButtonStyles.accept}>{'$' + asset.trade.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</button></td>
                 </tr>
             )}
         </table>

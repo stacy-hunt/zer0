@@ -29,46 +29,61 @@
 
 /* Dots */
 .dots {
-	padding-left: 18px;
+	margin-left: 15px;
 	flex-basis: 12px;
 }
 
 .dots > li {
-	height: 8px;
-	width: 8px;
+	position: relative;
+	height: 24px;
+	width: 24px;
 	border-radius: 50%;
-	background-color: rgba(255, 255, 255, 0.19);
+}
+
+.dots > li::after {
+	content: ' ';
+	position: absolute;
+	height: 10px;
+	width: 10px;
+
+	top: 5.5px;
+	left: 5px;
+	border-radius: 50%;
+
+	background-color: white;
 }
 
 .dots > li:not(:first-of-type) {
 	margin-top: 16px;
 }
 
-.dots > li.selected {
-	background-color: rgba(255, 255, 255, 1);
-	transform: scale(1.125);
-}
-
 /* Icons */
 .icons {
-	padding-left: 34px;
+	padding: 32px 16px;
+	margin-left: 17px;
+	border-radius: 100px;
 }
 
 .icons > li {
-	height: 60px;
-	width: 60px;
+	width: 34px;
 	border-radius: 50%;
-	background-color: #1D2832;
+	margin: 0;
+	padding: 0;
 
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.icons > li:not(:first-of-type) {
-	margin-top: 16px;
+.icons > li > button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,0,0,0);
+	width: 34px;
 }
 
-.icons > li.selected {
-	background-color: #1b1b1d;
-	border: 2px solid #78d0f8;
+.icons > li:not(:first-of-type) {
+	margin-top: 24px;
 }

@@ -1,12 +1,16 @@
 import React from 'react'
 
-import logo from '../assets/WilderIcon.png'
+import logo from '../assets/wilderverse.png'
 
 import SearchBar from './SearchBar'
 import BreadCrumb from './BreadCrumb'
+import ButtonTray from './ButtonTray'
 
 import navbarStyles from '../styles/NavBar.module.css'
 import buttonStyles from '../styles/Button.module.css'
+
+import ProfileIcon from '../assets/profile-icon.svg'
+import WalletIcon from '../assets/wallet-icon-2.svg'
 
 const NavBar = (props) => {
 
@@ -19,9 +23,10 @@ const NavBar = (props) => {
                 </div>
                 <SearchBar />
                 <div>
-                    <a>Connect Wallet</a>
-                    <button className={`${buttonStyles.createNetwork}`}>Create Token<div className={buttonStyles.arrow} /></button>
-
+                    <ButtonTray>
+                        <button><img src={WalletIcon} /></button>
+                        <button><img src={ProfileIcon} /></button>
+                    </ButtonTray>
                 </div>
             </nav>
         </header>

@@ -7,6 +7,7 @@ const HorizontalScroll = (props) => {
     return (
     	<div className={MetricStyles.bar}>
     		{props.children}
+    		<div style={{width: 0, minWidth: 0, marginLeft: 48, opacity: 0}}>hi</div>
     	</div>
     	                    
     )

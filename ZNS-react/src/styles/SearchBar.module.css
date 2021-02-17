@@ -1,13 +1,14 @@
 .searchBar {
 	position: relative;
+	border-radius: 64px;
 }
 
 .searchBar input {
-	width: 330px;
-	height: 47px;
-	background-color: rgba(244, 93, 100, 0.1);
+	width: 446px;
+	height: 51px;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(107, 59, 209, 0) 0%, rgba(105, 3, 141, 0.33) 100%);
 	border-radius: 31px;
-	padding: 15px 63px 13px 31px;
+	padding: 17px 63px 13px 31px;
 
 	/* Text */
 	text-align: left;
@@ -19,14 +20,14 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	height: 47px;
-	width: 47px;
+	height: 51px;
+	width: 68px;
 	border-radius: 31px;
-	background-color: rgba(244, 93, 100, 0.3);
+	background-color: rgba(0,0,0,0);
 	box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.15);
-	/*background-image: url('assets/loupe.svg');*/
+	background-image: url('../assets/search-icon.svg');
 	background-position: center;
-	background-size: 18px 18px;
+	background-size: 29px 28px;
 	background-repeat: no-repeat;
 }
 

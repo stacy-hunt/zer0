@@ -54,6 +54,31 @@ const metricCards = [
         'amount': 6832190,
         'subtext': 'Fully dilluted market cap for WILD'
     },
+    {
+        'title': 'Wilder Price',
+        'amount': 101.33,
+        'subtext': '@ 0.0306 BTC (+36.09%)'
+    },
+    {
+        'title': 'Market Cap',
+        'amount': 5329582,
+        'subtext': 'Fully dilluted market cap for WILD'
+    },
+    {
+        'title': 'Market Cap',
+        'amount': 8725188,
+        'subtext': 'Fully dilluted market cap for WILD'
+    },
+    {
+        'title': 'Market Cap',
+        'amount': 3428145,
+        'subtext': 'Fully dilluted market cap for WILD'
+    },
+    {
+        'title': 'Market Cap',
+        'amount': 6832190,
+        'subtext': 'Fully dilluted market cap for WILD'
+    },
 ]
 
 const tableData = [
@@ -138,54 +163,25 @@ const App = (props) => {
     }, [])
 
     return (
-        <div>
-            <Offer data={offer} />
-        </div>
+        homePage()
     )
 }
 
 const homePage = () => {
     return(
-        <div style={{paddingLeft: 205}}>
+        <div style={{paddingLeft: 168}}>
             <NavBar />
             <SideBar />
-            <div style={{display: 'flex', justifyContent: 'space-between', width: 1169, marginBottom: 28}}>
-                <h1 className='glow'>Metrics</h1>
-                <div style={{display: 'flex'}}>
-                    <button className={ButtonStyle.icon}></button>
-                    <button style={{marginLeft: 10}} className={ButtonStyle.icon}></button>
-                </div>
-            </div>
             <HorizontalScroll>
                 {metricCards.map(card =>
                     <MetricCard data={card} /> 
                 )}
             </HorizontalScroll>
-            <div style={{display: 'flex', justifyContent: 'space-between', width: 1169, marginTop: 48, marginBottom: 28}}>
-                <h1 className='glow'>Discover</h1>
-                <div style={{display: 'flex'}}>
-                    <button className={ButtonStyle.icon}></button>
-                    <button style={{marginLeft: 10}} className={ButtonStyle.icon}></button>
-                </div>
-            </div>
-           
 
-            <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: 27}}>
-                <div>
-                    <button className={ButtonStyle.tableFilter + ' selected'}>New Drops</button>
-                    <button className={ButtonStyle.tableFilter}>Trending</button>
-                    <button className={ButtonStyle.tableFilter}>Leaderboard</button>
-                    <button className={ButtonStyle.tableFilter}>Top Collectors</button>
-                </div>
-                <div style={{display: 'flex', alignItems: 'center', paddingRight: 70}}>
-                    <button className={ButtonStyle.hamburger}></button>
-                    <button style={{marginLeft: 17}}className={ButtonStyle.grid}></button>
-                    <div style={{marginLeft: 26}}>
-                        <span style={{fontSize: 12, color: '#f45d64'}}>Sort</span>
-                        <div style={{marginTop: 6}}>
-                            <span>Market Cap</span>
-                        </div>
-                    </div>
+            <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: 11, marginTop: 32}}>
+                <div style={{display: 'flex', alignItems: 'center'}}>
+                    <h1>Zer0 Networks</h1> 
+                    <button style={{width: 184, height: 45, marginLeft: 57}} className={ButtonStyle.accept}>New Drops</button>
                 </div>
             </div> 
 
@@ -198,6 +194,23 @@ const homePage = () => {
         </div>
     )
 }
+
+// <div>
+//     <button className={ButtonStyle.tableFilter + ' selected'}>New Drops</button>
+//     <button className={ButtonStyle.tableFilter}>Trending</button>
+//     <button className={ButtonStyle.tableFilter}>Leaderboard</button>
+//     <button className={ButtonStyle.tableFilter}>Top Collectors</button>
+// </div>
+// <div style={{display: 'flex', alignItems: 'center', paddingRight: 70}}>
+//     <button className={ButtonStyle.hamburger}></button>
+//     <button style={{marginLeft: 17}}className={ButtonStyle.grid}></button>
+//     <div style={{marginLeft: 26}}>
+//         <span style={{fontSize: 12, color: '#f45d64'}}>Sort</span>
+//         <div style={{marginTop: 6}}>
+//             <span>Market Cap</span>
+//         </div>
+//     </div>
+// </div>
 
 // <MetricBar data={metricCards} />
 // Will implement this properly when we add Redux

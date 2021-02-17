@@ -6,7 +6,7 @@ const SearchBar = (props) => {
 
     return (
         <div>
-            <div className={searchBarStyles.searchBar}>
+            <div className={searchBarStyles.searchBar + ' blur'}>
                 <input type='text' placeholder='Search' />
                 <button></button>
             </div>

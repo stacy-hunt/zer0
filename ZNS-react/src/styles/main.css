@@ -19,13 +19,17 @@ body, button, input {
 }
 
 body {
-	background-color: #42181b; /* Replace with textured background */
 	background-color: #120628;
-	/*background-image: url('../assets/texture-blue.jpg');*/
+	background-image: url('../assets/bg-purple-dark.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-	height: 100vh;
+	min-height: 100vh;
+	height: auto;
 	width: 100%;
-	padding-top: 110px;
+	padding-top: 123px;
+	padding-bottom: 123px;
 
 	/* Breakpoint in Framer */
 	min-width: 1440px;
@@ -34,7 +38,7 @@ body {
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 a {
@@ -58,6 +62,38 @@ button {
 
 .main {
 	flex: 1;
+}
+
+.purpleBackground {
+	background: radial-gradient(50% 50% at 50% 50%, rgba(107, 59, 209, 0) 0%, rgba(105, 3, 141, 0.33) 100%);
+}
+
+.gradientBorder {
+	border: 2px solid #AB6AFD;
+	/*border-image-source: linear-gradient(180deg, #AB6AFD 0%, rgba(93, 61, 160, 0.75) 100%);
+  	border-image-slice: 1;*/
+  	border-collapse: separate;
+}
+
+.blur {
+	backdrop-filter: blur(30px);
+	backdrop-webkit-filter: blur(30px);
+	backdrop-moz-filter: blur(30px);
+	backdrop-o-filter: blur(30px);
+	backdrop-ms-filter: blur(30px);
+}
+
+.purple-border-blur {
+	background: radial-gradient(50% 50% at 50% 50%, rgba(107, 59, 209, 0) 0%, rgba(105, 3, 141, 0.33) 100%);
+	border: 2px solid #AB6AFD;
+	/*border-image-source: linear-gradient(180deg, #AB6AFD 0%, rgba(93, 61, 160, 0.75) 100%);
+  	border-image-slice: 1;*/
+  	border-collapse: separate;
+  	backdrop-filter: blur(30px);
+	backdrop-webkit-filter: blur(30px);
+	backdrop-moz-filter: blur(30px);
+	backdrop-o-filter: blur(30px);
+	backdrop-ms-filter: blur(30px);
 }
 
 .haze {
