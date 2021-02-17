@@ -1,0 +1,25 @@
+.wallet {
+	position: relative;
+}
+
+.wallet input {
+	width: 447px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 21px;
+	padding: 17px 35px 13px 35px;
+
+	text-align: left;
+
+	border-radius: 6px;
+	border: 1px solid #AFAFAF;
+}
+
+.wallet button {
+	position: absolute;
+	top: 14px;
+	right: 27px;
+
+	height: 24px;
+	width: 24px;
+}

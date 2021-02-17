@@ -20,7 +20,7 @@ const NavBar = (props) => {
                 <SearchBar />
                 <div>
                     <a>Connect Wallet</a>
-                    <button className={`${buttonStyles.createNetwork}`}>Launch Token<div className={buttonStyles.arrow} /></button>
+                    <button className={`${buttonStyles.createNetwork}`}>Create Token<div className={buttonStyles.arrow} /></button>
 
                 </div>
             </nav>

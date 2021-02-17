@@ -12,7 +12,7 @@
 
 	background-color: rgba(244, 93, 100, 0.14);
 	border-radius: 12px 75px 12px 12px;
-	border: 2px solid rgba(244, 93, 100, 0.36);
+	border: 2px solid #f45d64;
 }
 
 .assetCard h4 {
@@ -22,7 +22,7 @@
 }
 
 .amount {
-	font-size: 24px;
+	font-size: 27px;
 	color: #f45d64;
 }
 

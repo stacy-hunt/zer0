@@ -1,0 +1,72 @@
+.connect {
+	width: 385px;
+    position: relative;
+    background-color: #fff;
+}
+
+.header {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    text-align: center;	
+
+    background-color: #F0F0F0;
+}
+
+.header h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: black;
+}
+
+.header button {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	width: 16px;
+	height: 16px;
+	background-color: grey;
+}
+
+.wallet {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 29px;
+	padding-right: 30px;
+	width: 100%;
+}
+
+.wallet {
+	margin-top: 26px;
+
+	color: black;
+}
+
+.wallet:last-child {
+	margin-bottom: 26px;
+}
+
+.wallet img {
+	height: 37px;
+	width: 37px;
+}
+
+.footer {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    text-align: center;	
+
+    background-color: #F0F0F0;
+}
+
+.footer span {
+	color: black;
+	line-height: 20px;
+}
+
+.footer span a {
+	color: black;
+	text-decoration: underline;
+}
