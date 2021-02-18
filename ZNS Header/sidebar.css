@@ -73,8 +73,9 @@
 
 .side-bar .profile {
 	position: absolute;
-	left: 60px;
+	left: 54px;
 	bottom: 35px;
+	text-align: center;
 }
 
 .side-bar .profile .dp {
@@ -82,4 +83,30 @@
 	height: 60px;
 	border-radius: 30px;
 	background-color: white;
+	margin-bottom: 12px;
+}
+
+.side-bar .profile button {
+	height: 30px;
+	width: 30px;
+}
+
+.side-bar .profile button:not(:first-child) {
+	margin-left: 12px;
+}
+
+.side-bar .profile button.wallet {
+	border-radius: 10px;
+	background-color: rgba(244, 93, 100, 0.2);
+	border: 2px solid #f45d64
+}
+
+.side-bar .profile button.darkmode-toggle {
+	background-image: url("assets/Round2.png");
+	background-size:  35px 35px;
+	background-position: center;
+	background-color: #172c3c;
+
+	border: 2px solid #78d0f8;	
+	border-radius: 50%;
 }
