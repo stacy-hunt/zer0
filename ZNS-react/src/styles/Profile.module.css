@@ -1,19 +1,25 @@
 .profile {
-	width: 801px;
-	background-color: white;
+	width: 878px;
 	color: #4D4D4D;
+	background: linear-gradient(90deg, rgba(63, 63, 63, 0.9) 0%, rgba(57, 57, 57, 0.9) 100%);
+	border-radius: 10px;
+	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.5));
+	opacity: 0.9;
 }
 
 .header {
 	font-size: 36px;
 	text-align: center;
 	padding-top: 34px;
-	padding-bottom: 34px;
+	padding-bottom: 30px;
+	background: rgba(0, 0, 0, 0.4);
+	color: #DADCDF;
 }
 
 .body {
 	display: flex;
-	padding: 9px 52px 62px 60px;
+	padding: 39px 52px 62px 60px;
+	color: white;
 }
 
 /* DP section */
@@ -38,18 +44,18 @@
 
 /* Profile paragraph */
 .body > div:nth-child(2) {
-	width: 564px;
+	width: 460px;
 	padding-left: 52px;
 
 	font-size: 18px;
-	line-height: 21px;
+	line-height: 22px;
 }
 
 /* Payment Section */
 
 .payment {
 	display: flex;
-	background-color: #F0F0F0;
+	background-color: rgba(0, 0, 0, 0.4);
 	padding-top: 43px;
 	padding-bottom: 54px;
 }
@@ -58,7 +64,7 @@
 	width: 138px;
 	height: 140px;
 
-	margin-left: 52px;
+	margin-left: 60px;
 }
 
 .payment > div {
@@ -67,7 +73,7 @@
 	text-align: center;
 	align-items: center;
 
-	margin-left: 30px;
+	margin-left: 107px;
 }
 
 .payment > div > img {
@@ -80,7 +86,8 @@
 }
 
 .payment > div > span {
-	margin-top: 26px;
+	margin-top: 14.5px;
+	color: #DADCDF;
 }
 
 .payment > div > input {
