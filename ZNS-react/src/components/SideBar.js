@@ -17,16 +17,16 @@ const SideBar = (props) => {
 				</ul>
 				<ul className={SideBarStyles.icons + ' purple-border-blur'}>
 					<li>
-						<button><img src={icon1} /></button>
+						<button><img alt="channels" src={icon1} /></button>
 					</li>
 					<li>
-						<button><img src={icon2} /></button>
+						<button><img alt="tasks" src={icon2} /></button>
 					</li>
 					<li>
-						<button><img src={icon3} /></button>
+						<button><img alt="feed" src={icon3} /></button>
 					</li>
 					<li>
-						<button><img src={icon4} /></button>
+						<button><img alt="members" src={icon4} /></button>
 					</li>
 				</ul>
 			</div>
