@@ -26,6 +26,7 @@ import SideBar from './components/SideBar'
 import ConnectToWallet from './components/ConnectToWallet'
 import Profile from './components/Profile'
 import Offer from './components/Offer'
+import Overlay from './components/Overlay'
 
 // Just some temporary data for rapid prototyping
 const metricCards = [
@@ -195,24 +196,6 @@ const homePage = () => {
     )
 }
 
-// <div>
-//     <button className={ButtonStyle.tableFilter + ' selected'}>New Drops</button>
-//     <button className={ButtonStyle.tableFilter}>Trending</button>
-//     <button className={ButtonStyle.tableFilter}>Leaderboard</button>
-//     <button className={ButtonStyle.tableFilter}>Top Collectors</button>
-// </div>
-// <div style={{display: 'flex', alignItems: 'center', paddingRight: 70}}>
-//     <button className={ButtonStyle.hamburger}></button>
-//     <button style={{marginLeft: 17}}className={ButtonStyle.grid}></button>
-//     <div style={{marginLeft: 26}}>
-//         <span style={{fontSize: 12, color: '#f45d64'}}>Sort</span>
-//         <div style={{marginTop: 6}}>
-//             <span>Market Cap</span>
-//         </div>
-//     </div>
-// </div>
-
-// <MetricBar data={metricCards} />
 // Will implement this properly when we add Redux
 const mapStateToProps = (state) => {
     return {
