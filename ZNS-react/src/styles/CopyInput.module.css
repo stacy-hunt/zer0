@@ -3,23 +3,33 @@
 }
 
 .wallet input {
-	width: 447px;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 21px;
-	padding: 17px 35px 13px 35px;
+	width: 362px;
+	padding: 17px 32px 13px 32px;
 
 	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
 
-	border-radius: 6px;
-	border: 1px solid #AFAFAF;
+	background: rgba(0, 0, 0, 0.8);
+	color: #DADCDF;
+
+	border-radius: 30px;
 }
 
 .wallet button {
 	position: absolute;
-	top: 14px;
+	top: 12px;
 	right: 27px;
 
-	height: 24px;
-	width: 24px;
+	padding: 0;
+	margin: 0;
+
+	height: 26px;
+	width: 26px;
+
+	background-image: url("../assets/copy-icon.svg");
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(0,0,0,0);
 }
