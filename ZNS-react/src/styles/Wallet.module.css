@@ -1,72 +1,85 @@
 .connect {
 	width: 385px;
     position: relative;
-    background-color: #fff;
+    opacity: 0.8;
+	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.5));
+	background: linear-gradient(90deg, rgba(63, 63, 63, 0.9) 0%, rgba(57, 57, 57, 0.9) 100%);
+	border-radius: 10px;
+
+	overflow: hidden;
 }
 
 .header {
     width: 100%;
-    padding-top: 17px;
-    padding-bottom: 16px;
+    padding-top: 27px;
+    padding-bottom: 30px;
     text-align: center;	
 
-    background-color: #F0F0F0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .header h3 {
 	font-size: 24px;
 	line-height: 30px;
-	color: black;
+	color: #DADCDF;
 }
 
 .header button {
 	position: absolute;
-	top: 24px;
-	right: 24px;
+	top: 36px;
+	right: 19px;
 	width: 16px;
 	height: 16px;
-	background-color: grey;
+	background-color: rgba(0,0,0,0);
+	background-image: url("../assets/close-icon.svg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.connect ul {
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 .wallet {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 29px;
-	padding-right: 30px;
 	width: 100%;
+	color: white;
+	font-size: 18px;
+
+	padding: 16px 17px 16px 17px;
 }
 
-.wallet {
-	margin-top: 26px;
-
-	color: black;
-}
-
-.wallet:last-child {
-	margin-bottom: 26px;
+.wallet:not(:last-child) {
+	border-bottom: 1px solid rgba(0,0,0,0.4);
 }
 
 .wallet img {
-	height: 37px;
-	width: 37px;
+	height: 32px;
+	width: 32px;
+	object-fit: contain;
+	border-radius: 18.5px;
 }
 
 .footer {
     width: 100%;
-    padding-top: 17px;
-    padding-bottom: 16px;
+    padding: 24px 24px;
     text-align: center;	
+	font-size: 14px;
 
-    background-color: #F0F0F0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .footer span {
-	color: black;
+	color: #DADCDF;
 	line-height: 20px;
+	padding-top: 2px;
 }
 
 .footer span a {
-	color: black;
+	color: #DADCDF;
 	text-decoration: underline;
 }
