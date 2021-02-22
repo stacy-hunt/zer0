@@ -20,7 +20,7 @@ body, button, input {
 
 body {
 	background-color: #120628;
-	background-image: url('../assets/bg-purple-dark.png');
+	background-image: url('../assets/bg-city-dark.png');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -69,7 +69,7 @@ button {
 }
 
 .gradientBorder {
-	border: 2px solid #AB6AFD;
+	border: 1px solid #AB6AFD;
 	/*border-image-source: linear-gradient(180deg, #AB6AFD 0%, rgba(93, 61, 160, 0.75) 100%);
   	border-image-slice: 1;*/
   	border-collapse: separate;
@@ -85,7 +85,7 @@ button {
 
 .purple-border-blur {
 	background: radial-gradient(50% 50% at 50% 50%, rgba(107, 59, 209, 0) 0%, rgba(105, 3, 141, 0.33) 100%);
-	border: 2px solid #AB6AFD;
+	border: 1px solid #AB6AFD;
 	/*border-image-source: linear-gradient(180deg, #AB6AFD 0%, rgba(93, 61, 160, 0.75) 100%);
   	border-image-slice: 1;*/
   	border-collapse: separate;

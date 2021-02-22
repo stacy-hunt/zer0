@@ -6,7 +6,7 @@ const BreadCrumb = (props) => {
 
     return (
         <div className={breadcrumbStyles.breadcrumb}>
-            <a className={breadcrumbStyles.crumb}>0:: </a><a className={breadcrumbStyles.endpoint}>Wilderverse</a>
+            <a className={breadcrumbStyles.crumb}>0:/Wilder</a>
         </div>
     )
 }

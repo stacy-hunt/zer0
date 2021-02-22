@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Overlay = (props) => {
+const Overlay = ({ close, children }) => {
+
+	const closeOverlay = (e) => {
+		if(e.target.classList.value.indexOf('overlay') > -1) close()
+	}
 
 	return (
-		<div style={{
+		<div onClick={closeOverlay} style={{
 			width: '100%', height: '100vh', 
 			display: 'flex', alignItems: 'center', 
 			justifyContent: 'center',
@@ -11,8 +15,8 @@ const Overlay = (props) => {
 			top: 0,
 			left: 0,
 			zIndex: 100,
-		}} className='blur'>
-			{props.children}
+		}} className='blur overlay'>
+			{children}
 		</div>
 	)
 }

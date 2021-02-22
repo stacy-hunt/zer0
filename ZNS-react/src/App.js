@@ -3,7 +3,7 @@ import './styles/reset.css' // Import first so components styles cascade
 import './styles/main.css' // Generic styling
 
 //- React imports
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -27,6 +27,16 @@ import ConnectToWallet from './components/ConnectToWallet'
 import Profile from './components/Profile'
 import Offer from './components/Offer'
 import Overlay from './components/Overlay'
+import MintNewNFT from './components/MintNewNFT'
+import BreadCrumb from './components/BreadCrumb'
+import SearchBar from './components/SearchBar'
+import ButtonTray from './components/ButtonTray'
+
+//- Assets
+import logo from './assets/wilderverse.png'
+import ProfileIcon from './assets/profile-icon.svg'
+import ShopIcon from './assets/shop-icon.svg'
+import WalletIcon from './assets/wallet-icon.svg'
 
 // Just some temporary data for rapid prototyping
 const metricCards = [
@@ -158,20 +168,63 @@ const offer = {
 
 
 const App = (props) => {
-    // Will implement this properly when we add Redux
-    useEffect(() => {
-        props.initializeArtwork()
-    }, [])
 
-    return (
-        homePage()
-    )
-}
+    const [ overlay, setOverlay ] = useState('none')
+    const [ wallet, setWallet ] = useState(false)
 
-const homePage = () => {
+    const openProfile = () => {
+        setOverlay('profile')
+    }
+
+    const openWallet = () => {
+        setOverlay('wallet')
+    }
+
+    const openMint = () => {
+        setOverlay('mint')
+    }
+
+    const openShop = () => {
+        setOverlay('shop')
+    }
+
+    const closeOverlay = () => {
+        setOverlay('none')
+    }
+
+    const connectWallet = () => {
+        setWallet(true)
+        setOverlay('none')
+    }
+
     return(
         <div style={{paddingLeft: 168}}>
-            <NavBar />
+            { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}
+            { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
+            { overlay == 'mint' && <Overlay close={closeOverlay}><MintNewNFT /></Overlay> }
+            <NavBar>
+                <div>
+                    <a href=''><img src={logo} /></a>
+                    <BreadCrumb style={{marginLeft: 30}} />
+                </div>
+                <SearchBar />
+                <div>
+                    <ButtonTray>
+                        { wallet && 
+                            <>
+                            <button onClick={openMint}><img src={ShopIcon} /></button>
+                            <button onClick={openProfile}><img src={ProfileIcon} /></button>
+                            </>
+                        }
+                        { !wallet &&
+                            <div>
+                                <button onClick={openWallet}><img src={WalletIcon} /></button>
+                            </div>
+                        }
+                    </ButtonTray>
+                </div>
+            </NavBar>
+
             <SideBar />
             <HorizontalScroll>
                 {metricCards.map(card =>
@@ -182,7 +235,11 @@ const homePage = () => {
             <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: 11, marginTop: 32}}>
                 <div style={{display: 'flex', alignItems: 'center'}}>
                     <h1>Zer0 Networks</h1> 
-                    <button style={{width: 184, height: 45, marginLeft: 57}} className={ButtonStyle.accept}>New Drops</button>
+                    <h2 style={{marginLeft: 71}}>0:/Wilder.frank</h2>
+                    <button style={{width: 184, height: 45, marginLeft: 125}} className={ButtonStyle.accept}>New Drops</button>
+                </div>
+                <div>
+                    <SearchBar />
                 </div>
             </div> 
 
