@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.73d74c97.chunk.css",
-    "main.js": "/static/js/main.5a49b970.chunk.js",
-    "main.js.map": "/static/js/main.5a49b970.chunk.js.map",
+    "main.css": "/static/css/main.23964423.chunk.css",
+    "main.js": "/static/js/main.850f1b3a.chunk.js",
+    "main.js.map": "/static/js/main.850f1b3a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6e21b29a.js",
     "runtime-main.js.map": "/static/js/runtime-main.6e21b29a.js.map",
-    "static/js/2.c3e7b26e.chunk.js": "/static/js/2.c3e7b26e.chunk.js",
-    "static/js/2.c3e7b26e.chunk.js.map": "/static/js/2.c3e7b26e.chunk.js.map",
+    "static/js/2.88100d84.chunk.js": "/static/js/2.88100d84.chunk.js",
+    "static/js/2.88100d84.chunk.js.map": "/static/js/2.88100d84.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f51e02e6951516b636cbcb114c120096.js": "/precache-manifest.f51e02e6951516b636cbcb114c120096.js",
+    "precache-manifest.c02c046bfab850db5d3dc8f05dca2d95.js": "/precache-manifest.c02c046bfab850db5d3dc8f05dca2d95.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.73d74c97.chunk.css.map": "/static/css/main.73d74c97.chunk.css.map",
-    "static/js/2.c3e7b26e.chunk.js.LICENSE.txt": "/static/js/2.c3e7b26e.chunk.js.LICENSE.txt",
+    "static/css/main.23964423.chunk.css.map": "/static/css/main.23964423.chunk.css.map",
+    "static/js/2.88100d84.chunk.js.LICENSE.txt": "/static/js/2.88100d84.chunk.js.LICENSE.txt",
     "static/media/1.svg": "/static/media/1.f3a4776f.svg",
     "static/media/2.svg": "/static/media/2.1b408968.svg",
     "static/media/3.svg": "/static/media/3.6a5a2154.svg",
     "static/media/4.svg": "/static/media/4.6aae27bc.svg",
-    "static/media/main.css": "/static/media/bg-purple-dark.10473b41.png",
+    "static/media/main.css": "/static/media/bg-city-dark.c8fd2eae.png",
     "static/media/Wallet.module.css": "/static/media/close-icon.b120af82.svg",
     "static/media/copy-icon.svg": "/static/media/copy-icon.9a750ab5.svg",
     "static/media/eth.svg": "/static/media/eth.6c491745.svg",
@@ -24,13 +24,15 @@
     "static/media/nft-image-coronalisa.png": "/static/media/nft-image-coronalisa.36d175b0.png",
     "static/media/profile-icon.svg": "/static/media/profile-icon.50db0d7c.svg",
     "static/media/SearchBar.module.css": "/static/media/search-icon.d5e7c21e.svg",
-    "static/media/wallet-icon-2.svg": "/static/media/wallet-icon-2.edfbafeb.svg",
+    "static/media/shop-icon.svg": "/static/media/shop-icon.edfbafeb.svg",
+    "static/media/ValidatedInput.module.css": "/static/media/tick.84f15bb1.svg",
+    "static/media/wallet-icon.svg": "/static/media/wallet-icon.56797733.svg",
     "static/media/wilder.jpg": "/static/media/wilder.cf572f6c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6e21b29a.js",
-    "static/js/2.c3e7b26e.chunk.js",
-    "static/css/main.73d74c97.chunk.css",
-    "static/js/main.5a49b970.chunk.js"
+    "static/js/2.88100d84.chunk.js",
+    "static/css/main.23964423.chunk.css",
+    "static/js/main.850f1b3a.chunk.js"
   ]
 }
