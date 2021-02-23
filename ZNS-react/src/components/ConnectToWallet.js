@@ -12,6 +12,10 @@ const ConnectToWallet = (props) => {
 
 	const images = importAll(require.context('../assets/wallets', false, /\.(png|jpe?g|svg)$/));
 
+    const connectToWallet = () => {
+        props.onConnect()
+    }
+
 	return (
         <div className={WalletStyles.connect}>
             <div className={WalletStyles.header}>
@@ -19,23 +23,23 @@ const ConnectToWallet = (props) => {
                 <button></button>
             </div>
             <ul>
-        		<li className={WalletStyles.wallet}>
+        		<li onClick={connectToWallet} className={WalletStyles.wallet}>
                 	<span>Metamask</span>
                 	<img src={metamask} />
             	</li>
-        		<li className={WalletStyles.wallet}>
+        		<li onClick={connectToWallet} className={WalletStyles.wallet}>
                 	<span>Wallet Connect</span>
                 	<img src={walletConnect} />
             	</li>
-        		<li className={WalletStyles.wallet}>
+        		<li onClick={connectToWallet} className={WalletStyles.wallet}>
                 	<span>Coinbase Wallet</span>
                 	<img src={coinbaseWallet} />
             	</li>
-        		<li className={WalletStyles.wallet}>
+        		<li onClick={connectToWallet} className={WalletStyles.wallet}>
                 	<span>Fortmatic</span>
                 	<img src={fortmatic} />
             	</li>
-        		<li className={WalletStyles.wallet}>
+        		<li onClick={connectToWallet} className={WalletStyles.wallet}>
                 	<span>Portis</span>
                 	<img src={portis} />
             	</li>

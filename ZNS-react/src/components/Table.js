@@ -12,7 +12,7 @@ const Table = (props) => {
     return (
         <table className={AssetTableStyles.table + ' purpleBackground blur'}>
             <tr>
-                <h5 className={AssetTableStyles.location} >0:/Wilder.frank</h5>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th>Volume</th>
@@ -32,7 +32,7 @@ const Table = (props) => {
                     <td style={{color: asset.changeWeek < 0 ? '#BB6BD9' : '#56CCF2'}}>{asset.changeWeek}%</td>
                     <td>{'$' + asset.marketCap.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
                     <td><img src={graph} /></td>
-                    <td><button style={{width: 174, fontSize: 22}} className={ButtonStyles.accept}>{'$' + asset.trade.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</button></td>
+                    <td><button style={{width: 174, fontSize: 18, paddingTop: 4}} className={ButtonStyles.accept}>{'$' + asset.trade.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</button></td>
                 </tr>
             )}
         </table>
