@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import ValidatedInput from './ValidatedInput'
 
@@ -7,7 +7,6 @@ import MintNewNFTStyle from '../styles/MintNewNFT.module.css'
 const MintNewNFT = (props) => {
 
 	const uploadImage = () => {
-		console.log('yeet')
 	}
 
 	return (
@@ -20,16 +19,16 @@ const MintNewNFT = (props) => {
 				<div>
 					<div>
 						<label>Upload Media File</label>
-						<ValidatedInput />
+						<ValidatedInput type='text' />
 					</div>
 				</div>
 
 				<div>
 					<div>
 						<label>Title</label>
-						<ValidatedInput />
+						<ValidatedInput type='text' />
 						<label>Story</label>
-						<textarea />
+						<ValidatedInput type='textarea' style={{height: 200}} />
 					</div>
 					<div>
 						<span>Preview</span>
@@ -39,7 +38,7 @@ const MintNewNFT = (props) => {
 				<div>
 					<div>
 						<label>Your Bid (Ethereum)</label>
-						<ValidatedInput />
+						<ValidatedInput type='number' />
 						<label>Your Bid (Wild Token)</label>
 						<label>W 3.10</label>
 					</div>

@@ -232,7 +232,7 @@ const App = (props) => {
                 )}
             </HorizontalScroll>
 
-            <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: 11, marginTop: 32}}>
+            <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: 11, marginTop: 32, maxWidth: 1225}}>
                 <div style={{display: 'flex', alignItems: 'center'}}>
                     <h1>Zer0 Networks</h1> 
                     <h2 style={{marginLeft: 71}}>0:/Wilder.frank</h2>
