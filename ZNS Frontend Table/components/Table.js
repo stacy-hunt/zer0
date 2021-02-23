@@ -6,9 +6,12 @@ function Table(config){
 	var self = this
 	var element = $(config.element)
 	var row = element.find('.row')
+	var dialog = element.find('.dialog')
+	
+	
 	
 	function initialise(){
-		console.log(row)
+		
 	}
 	this.initialise = initialise
 	
@@ -30,5 +33,12 @@ function Table(config){
 	}
 	this.on = on
 	
+	row.on('click', () => {
+		dialog.fadeIn()
+	})
+	dialog.on('click', () =>{
+		
+		dialog.fadeOut()
+	})
 
 }
