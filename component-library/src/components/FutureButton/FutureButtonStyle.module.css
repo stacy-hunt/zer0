@@ -1,0 +1,123 @@
+.futureButton {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 36px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    color: white;
+    background: #1f1552;
+
+    border-radius: 19px;
+    border-style: solid;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: #3ca1ff;
+
+    cursor: pointer;
+}
+
+.content {
+    margin-left: 8px;
+    margin-right: 8px;
+
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.iconImage {
+    height: 16px;
+    width: 16px;
+
+    background-image: url('./arrow-networks.svg');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+@keyframes expand {
+    0% {
+        top: 50%; 
+        left: 50%;
+        height: 0;
+        width: 0;
+        border-radius: 0;
+    }
+    25% {
+        top: 50%;
+        left: calc(50% - 2px);
+        
+        width: 2px; 
+        height: 0;
+    }
+    70% {
+        top: 0;
+        left: calc(50% - 2px);
+
+        width: 2px; 
+        height: 100%;
+    }
+    100% {
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+    }
+}
+
+@keyframes shrink {
+    100% {
+        top: 50%; 
+        left: 50%;
+        height: 0;
+        width: 0;
+        border-radius: 0;
+    }
+    70% {
+        top: 50%;
+        left: calc(50% - 2px);
+        
+        width: 2px; 
+        height: 0;
+    }
+    25% {
+        top: 0;
+        left: calc(50% - 2px);
+
+        width: 2px; 
+        height: 100%;
+    }
+    0% {
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+    }
+}
+
+.wash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: rgba(255,255,255,0.2);
+    height: 0;
+    width: 0;
+
+}
+
+.wash.hovered {
+    animation: shrink 0.5s;
+}
+
+.futureButton:hover .wash {
+    animation: expand 0.7s forwards;
+    animation-timing-function: ease-in-out;
+}
