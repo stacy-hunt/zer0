@@ -19,9 +19,8 @@ const App = (props) => {
             <h2>Future Button</h2>
             <p>This one isn't quite done yet - still need access to the Figma doc for the right design assets and the correct colours/blur values, and the animation needs some tweaking</p>
             <div style={{display: 'flex'}}>
-                <FutureButton>Label</FutureButton>
-                <FutureButton>Big Button Label</FutureButton>
-                <FutureButton>Even Bigger Button Label, Damn That's A Big Label</FutureButton>
+                <FutureButton>Option 1</FutureButton>
+                <FutureButton style={{marginLeft: 32}}>Option 2</FutureButton>
             </div>
         </div>
     )
