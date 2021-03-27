@@ -19,8 +19,7 @@ const ConnectToWallet = (props) => {
 	return (
         <div className={WalletStyles.connect}>
             <div className={WalletStyles.header}>
-                <h3>Connect to a wallet</h3>
-                <button></button>
+                <h3>Connect To A Wallet</h3>
             </div>
             <ul>
         		<li onClick={connectToWallet} className={WalletStyles.wallet}>
@@ -45,7 +44,7 @@ const ConnectToWallet = (props) => {
             	</li>
             </ul>
             <div className={WalletStyles.footer}>
-                <span>New to Ethereum? <a href='https://ethereum.org/en/wallets/' target='_blank'>Learn more about wallets</a></span>
+                <p>New to Ethereum?<br/><a href='https://ethereum.org/en/wallets/' target='_blank'>Learn more about wallets</a></p>
             </div>
         </div>
     )

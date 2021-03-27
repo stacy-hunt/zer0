@@ -1,87 +1,77 @@
 .connect {
-	width: 385px;
+	width: 317px;
     position: relative;
-    opacity: 0.8;
 	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.5));
-	background: linear-gradient(90deg, rgba(63, 63, 63, 0.9) 0%, rgba(57, 57, 57, 0.9) 100%);
-	border-radius: 10px;
-
+	background: var(--background-purple-card-20);
+	backdrop-filter: blur(50px);
+	border-radius: var(--box-radius);
 	overflow: hidden;
+
+	border: 1px solid var(--color-primary);
+	filter: var(--glow-primary);
 }
 
 .header {
     width: 100%;
-    padding-top: 27px;
-    padding-bottom: 30px;
+    padding-top: 38px;
+    padding-bottom: 22px;
     text-align: center;	
 
-    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(92.24deg, rgba(0, 22, 55, 0.5) 0%, rgba(0, 63, 137, 0.265) 100%);
 }
 
 .header h3 {
 	font-size: 24px;
 	line-height: 30px;
-	color: #DADCDF;
-}
-
-.header button {
-	position: absolute;
-	top: 36px;
-	right: 19px;
-	width: 16px;
-	height: 16px;
-	background-color: rgba(0,0,0,0);
-	background-image: url("./assets/close-icon.svg");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	color: var(--color-accent-1);
 }
 
 .connect ul {
-	padding-left: 16px;
-	padding-right: 16px;
+	width: 100%;
+	margin-top: 48px;
 }
 
 .wallet {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	margin-top: 9px;
+
 	width: 100%;
 	color: white;
 	font-size: 18px;
 
 	cursor: pointer;
 
-	padding: 16px 17px 16px 17px;
+	padding: 5px 54px;
 }
 
-.wallet:not(:last-child) {
-	border-bottom: 1px solid rgba(0,0,0,0.4);
+.wallet:hover {
+	background-color: var(--color-accent-1-50);
 }
 
 .wallet img {
-	height: 32px;
-	width: 32px;
+	height: 38px;
+	width: 38px;
 	object-fit: contain;
-	border-radius: 18.5px;
+	border-radius: 19px;
 }
 
 .footer {
     width: 100%;
-    padding: 24px 24px;
+    padding: 55.5px 24px 24px 24px;
     text-align: center;	
 	font-size: 14px;
-
-    background: rgba(0, 0, 0, 0.4);
 }
 
-.footer span {
+.footer p {
 	color: #DADCDF;
-	line-height: 20px;
+	line-height: 22px;
 	padding-top: 2px;
 }
 
-.footer span a {
-	color: #DADCDF;
+.footer p a {
+	color: var(--color-accent-1);
 	text-decoration: underline;
 }
