@@ -26,6 +26,7 @@ import FutureButton from './components/Buttons/FutureButton/FutureButton.js'
 import TextButton from './components/Buttons/TextButton/TextButton.js'
 import Overlay from './components/Overlay/Overlay.js'
 import ConnectToWallet from './components/ConnectToWallet/ConnectToWallet.js'
+import Profile from './components/Profile/Profile.js'
 
 //- Assets
 import logo from './assets/wilderverse.png'
@@ -195,6 +196,7 @@ const App = (props) => {
     return(
         <div className='darkmode' style={{paddingLeft: 100}}>
             { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
+            { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}
             <TitleBar style={{marginTop: 30, paddingRight: 90, paddingLeft: 100}}>
                 <div>
                     <TextButton toggleable={true}>Zero Networks</TextButton>
@@ -204,7 +206,7 @@ const App = (props) => {
                     <SearchBar />
                     { wallet && 
                         <>
-                            <FutureButton>Profile</FutureButton>
+                            <FutureButton click={openProfile}>Profile</FutureButton>
                             <FutureButton>Wallet</FutureButton>
                         </>
                     }
