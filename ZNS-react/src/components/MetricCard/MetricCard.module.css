@@ -1,0 +1,22 @@
+/* Cards */
+.assetCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
+
+	padding: 32px 32px 32px 34px;
+	border-radius: 10px 60px 10px 10px;
+
+	width: 340px;
+	height: 199px;
+}
+
+.assetCard h4 {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.amount {
+	font-size: 27px;
+}
