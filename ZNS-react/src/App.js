@@ -24,6 +24,8 @@ import TitleBar from './components/NavBars/TitleBar/TitleBar.js'
 import SearchBar from './components/SearchBar/SearchBar.js' // Search bar
 import FutureButton from './components/Buttons/FutureButton/FutureButton.js'
 import TextButton from './components/Buttons/TextButton/TextButton.js'
+import Overlay from './components/Overlay/Overlay.js'
+import ConnectToWallet from './components/ConnectToWallet/ConnectToWallet.js'
 
 //- Assets
 import logo from './assets/wilderverse.png'
@@ -162,10 +164,37 @@ const offer = {
 
 const App = (props) => {
 
-    const [ selectedFilter, selectFilter ] = useState('Zero Networks')
+    const [ overlay, setOverlay ] = useState('none')
+    const [ wallet, setWallet ] = useState(false)
+
+    const openProfile = () => {
+        setOverlay('profile')
+    }
+
+    const openWallet = () => {
+        setOverlay('wallet')
+    }
+
+    const openMint = () => {
+        setOverlay('mint')
+    }
+
+    const openShop = () => {
+        setOverlay('shop')
+    }
+
+    const closeOverlay = () => {
+        setOverlay('none')
+    }
+
+    const connectWallet = () => {
+        setWallet(true)
+        setOverlay('none')
+    }
 
     return(
         <div className='darkmode' style={{paddingLeft: 100}}>
+            { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
             <TitleBar style={{marginTop: 30, paddingRight: 90, paddingLeft: 100}}>
                 <div>
                     <TextButton toggleable={true}>Zero Networks</TextButton>
@@ -173,9 +202,15 @@ const App = (props) => {
                 </div>
                 <div>
                     <SearchBar />
-                    <FutureButton>Connect Wallet</FutureButton>
-                    <FutureButton>Profile</FutureButton>
-                    <FutureButton>Wallet</FutureButton>
+                    { wallet && 
+                        <>
+                            <FutureButton>Profile</FutureButton>
+                            <FutureButton>Wallet</FutureButton>
+                        </>
+                    }
+                    { !wallet && 
+                        <FutureButton click={openWallet}>Connect Wallet</FutureButton>
+                    }
                 </div>
             </TitleBar>
         </div>
