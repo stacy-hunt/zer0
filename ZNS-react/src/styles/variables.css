@@ -3,8 +3,11 @@
     Should be easy to switch global colours, and switching darkmode/lightmode
 */
 .darkmode {
+    --font-size-default: 16px;
+
     --color-primary: #8C00FF;
     --color-accent-1: #3CA1FF;
+    --color-accent-1-50:rgba(60,161,255,0.5); 
     --color-accent-1-darker: #1E5180;
     --color-accent-2: #EB00FF;
     --color-success: #3CC13B;
@@ -14,7 +17,10 @@
 
     --background-primary-button-fill: linear-gradient(148deg, #00407C 20.93%, #00203F 82.47%);
     --background-secondary-button-fill: #1E5180;
+
     --background-purple-card: #4E0084;
+    --background-purple-card-20: rgba(78,0,132,0.2);
+
     --background-blue-card: linear-gradient(92.24deg, rgba(0, 102, 255, 0.2) 0%, rgba(0, 63, 137, 0.2) 100%);
 
     --background-primary: rgba(78, 0, 132, 0.2);
@@ -25,8 +31,7 @@
 
     --stroke-primary-button: linear-gradient(180deg, #5F8CFF 0%, #002584 100%);
 
-    --glow-primary: 0px 0px 10px 0px #EB00FF;
-    --glow-box-purple: drop-shadow(0px 0px 10px #EB00FF);
+    --glow-primary: drop-shadow(0px 0px 10px 0px #EB00FF);
     --glow-text-blue: 0px 0px 10px rgba(60, 161, 255, 0.7);
     --glow-text-white: 0px 0px 10px rgba(255, 255, 255, 0.7);
 
