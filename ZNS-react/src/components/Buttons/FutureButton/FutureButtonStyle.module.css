@@ -45,6 +45,8 @@
     margin-left: 8px;
     margin-right: 8px;
 
+    font-size: var(--font-size-default);
+
     color: var(--color-accent-1);
     text-shadow: var(--glow-text-blue);
     transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;

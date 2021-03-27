@@ -12,6 +12,7 @@ const FutureButton = (props) => {
     }
 
     const handleClick = () => {
+        if(props.click) props.click()
         if(props.togglable) setSelected(!isSelected)
     }
 
