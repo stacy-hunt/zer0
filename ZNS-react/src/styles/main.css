@@ -1,6 +1,6 @@
 /* Not sure how you guys are handling fonts so I'll just use system font */
 body, button, input {
-	font-family: 'Univia Pro', sans-serif;
+	font-family: 'Eurostile', sans-serif;
 	letter-spacing: 0.2px;
 }
 
