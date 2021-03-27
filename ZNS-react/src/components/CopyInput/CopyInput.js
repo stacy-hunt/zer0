@@ -2,8 +2,6 @@ import React from 'react'
 
 import CopyInputStyle from './CopyInput.module.css'
 
-import CopyIcon from '../assets/copy-icon.svg'
-
 const CopyInput = (props) => {
 
 	return (
