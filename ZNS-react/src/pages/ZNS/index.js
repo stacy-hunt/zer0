@@ -11,10 +11,14 @@ import TextButton from '../../components/Buttons/TextButton/TextButton.js'
 import Overlay from '../../components/Overlay/Overlay.js'
 import ConnectToWallet from '../../components/ConnectToWallet/ConnectToWallet.js'
 import Profile from '../../components/Profile/Profile.js'
+/* Asset cards */
 import AssetPriceCard from'../../components/Cards/AssetCard/AssetPriceCard/AssetPriceCard.js'
 import AssetMarketCapCard from '../../components/Cards/AssetCard/AssetMarketCapCard/AssetMarketCapCard.js'
 import AssetGraphCard from '../../components/Cards/AssetCard/AssetGraphCard/AssetGraphCard.js'
 import HorizontalScroll from '../../components/HorizontalScroll/HorizontalScroll.js'
+/* Banners */
+import NextDrop from '../../components/Banners/NextDrop/NextDrop.js'
+
 
 //- Assets
 import logo from '../../assets/wilderverse.png'
@@ -128,7 +132,7 @@ const ZNS = (props) => {
     }
 
     return(
-        <div className='darkmode' style={{paddingLeft: 100}}>
+        <div className='darkmode' style={{paddingLeft: 100, paddingRight: 88}}>
             { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
             { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}
             <TitleBar style={{marginTop: 30, paddingRight: 90, paddingLeft: 100}}>
@@ -178,6 +182,12 @@ const ZNS = (props) => {
                     price={23024.52}
                 />
             </HorizontalScroll>
+            <NextDrop 
+                title='Futopia'
+                artist='Frank Wilder'
+                date={new Date(new Date().getTime() + (24 * 60 * 60 * 1000))}
+                style={{marginTop: 16}}
+            />
         </div>
     )
 }
