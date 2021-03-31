@@ -55,9 +55,11 @@ i,em{font-style: italic;}
 p{padding-bottom:15px;}
 ul{display: block;list-style-type: disc;list-style:none;}
 ol{display: block;list-style-type: decimal;}
-button {-webkit-appearance: none;border: 0;}
+button {-webkit-appearance: none;border: 0;cursor: pointer;}
 button:focus, select:focus {outline: 0;}
 input[type="checkbox"] {margin: 0;}
+input {border: none;}
+a {cursor: pointer;}
 
 @media(max-width:768px){
 	h1,p,a,li {
