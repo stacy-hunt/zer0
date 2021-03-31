@@ -17,7 +17,7 @@ const ConnectToWallet = (props) => {
     }
 
 	return (
-        <div className={WalletStyles.connect}>
+        <div className={`${WalletStyles.connect} blur`}>
             <div className={WalletStyles.header}>
                 <h3>Connect To A Wallet</h3>
             </div>
