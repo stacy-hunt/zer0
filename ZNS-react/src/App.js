@@ -1,6 +1,5 @@
 //- Global stylesheets
 import './styles/reset.css' // Import first so components styles cascade
-import './styles/variables.css' // Import styling variables
 import './styles/main.css' // Generic styling
 
 //- React imports
