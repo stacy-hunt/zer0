@@ -26,6 +26,9 @@ import TextButton from './components/Buttons/TextButton/TextButton.js'
 import Overlay from './components/Overlay/Overlay.js'
 import ConnectToWallet from './components/ConnectToWallet/ConnectToWallet.js'
 import Profile from './components/Profile/Profile.js'
+import AssetPriceCard from'./components/Cards/AssetCard/AssetPriceCard/AssetPriceCard.js'
+import AssetMarketCapCard from './components/Cards/AssetCard/AssetMarketCapCard/AssetMarketCapCard.js'
+import HorizontalScroll from './components/HorizontalScroll/HorizontalScroll.js'
 
 //- Assets
 import logo from './assets/wilderverse.png'
@@ -214,61 +217,28 @@ const App = (props) => {
                     }
                 </div>
             </TitleBar>
+            <HorizontalScroll>
+                <AssetPriceCard 
+                    title='Wild Price'
+                    price={230.1}
+                    priceInBtc={0.0053}
+                    change={12.03}
+                />
+                <AssetPriceCard 
+                    title='Wild Price'
+                    price={153.2}
+                    priceInBtc={0.0042}
+                    change={-3.94}
+                />
+                <AssetMarketCapCard 
+                    title='Total Wild Holders'
+                    price={23024.52}
+                />
+            </HorizontalScroll>
         </div>
     )
 }
 
-// { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}
-//             { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
-//             { overlay == 'mint' && <Overlay close={closeOverlay}><MintNewNFT /></Overlay> }
-//             <NavBar>
-//                 <div>
-//                     <a href=''><img src={logo} /></a>
-//                     <BreadCrumb style={{marginLeft: 30}} />
-//                 </div>
-//                 <SearchBar />
-//                 <div>
-//                     <ButtonTray>
-//                         { wallet && 
-//                             <>
-//                             <button onClick={openMint}><img src={ShopIcon} /></button>
-//                             <button onClick={openProfile}><img src={ProfileIcon} /></button>
-//                             </>
-//                         }
-//                         { !wallet &&
-//                             <div>
-//                                 <button onClick={openWallet}><img src={WalletIcon} /></button>
-//                             </div>
-//                         }
-//                     </ButtonTray>
-//                 </div>
-//             </NavBar>
-
-//             <SideBar />
-//             <HorizontalScroll>
-//                 {metricCards.map(card =>
-//                     <MetricCard data={card} /> 
-//                 )}
-//             </HorizontalScroll>
-
-//             <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: 11, marginTop: 32, maxWidth: 1225}}>
-//                 <div style={{display: 'flex', alignItems: 'center'}}>
-//                     <h1>Zer0 Networks</h1> 
-//                     <h2 style={{marginLeft: 71}}>0:/Wilder.frank</h2>
-//                     <button style={{width: 184, height: 45, marginLeft: 125}} className={ButtonStyle.accept}>New Drops</button>
-//                 </div>
-//                 <div>
-//                     <SearchBar />
-//                 </div>
-//             </div> 
-
-//             <HorizontalScroll>
-//                 <Table data={tableData} />
-//                 <Table data={tableData.slice(2)} />
-//                 <Table data={tableData.slice(1)} />
-//             </HorizontalScroll>
-
-// Will implement this properly when we add Redux
 const mapStateToProps = (state) => {
     return {
         artwork: state.artwork,
