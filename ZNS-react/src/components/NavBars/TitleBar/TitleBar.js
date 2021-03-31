@@ -6,7 +6,7 @@ const TitleBar = (props) => {
 
     return (
         <header style={props.style}>
-            <nav>
+            <nav className={`${titlebarStyles.TitleBar} border-primary blur`}>
                 {props.children}
             </nav>
         </header>

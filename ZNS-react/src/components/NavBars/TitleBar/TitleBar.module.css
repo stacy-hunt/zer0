@@ -13,7 +13,7 @@ header {
 
 /* Nav Alignments */
 
-nav {
+.TitleBar {
 	position: relative;
 	display: flex;
 
@@ -24,7 +24,7 @@ nav {
 	box-shadow: var(--glow-pimary);
 }
 
-nav::after {
+.TitleBar::after {
 	content: ' ';
 	position: absolute;
 	top: 0;
@@ -35,35 +35,35 @@ nav::after {
 	width: 100%;
 
 	border-radius: var(--box-radius);
-	border: 1px solid #AF4CFF;
+	/* border: 1px solid #AF4CFF; */
 	box-shadow: var(--glow-pimary);
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
-nav > div {
+.TitleBar > div {
 	flex: 1;
 	flex-grow: 1;
 	display: flex;
 	align-items: center;
 }
 
-nav > div > * {
+.TitleBar > div > * {
 	/* Maybe not the best solution long term but works for now
 	until we have other breakpoints designed */
 	flex-shrink: 0;
 }
 
-nav > div:not(:first-child) {
+.TitleBar > div:not(:first-child) {
 	/*padding-top 11px;*/
 	/*padding-bottom: 1px;*/
 }
 
-nav > div:nth-child(2) {
+.TitleBar > div:nth-child(2) {
 	justify-content: flex-end;
 }
 
-nav > div:nth-child(2) > *:not(:last-child) {
+.TitleBar > div:nth-child(2) > *:not(:last-child) {
 	margin-right: 10px;
 }
