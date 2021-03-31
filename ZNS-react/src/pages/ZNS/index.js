@@ -13,6 +13,7 @@ import ConnectToWallet from '../../components/ConnectToWallet/ConnectToWallet.js
 import Profile from '../../components/Profile/Profile.js'
 import AssetPriceCard from'../../components/Cards/AssetCard/AssetPriceCard/AssetPriceCard.js'
 import AssetMarketCapCard from '../../components/Cards/AssetCard/AssetMarketCapCard/AssetMarketCapCard.js'
+import AssetGraphCard from '../../components/Cards/AssetCard/AssetGraphCard/AssetGraphCard.js'
 import HorizontalScroll from '../../components/HorizontalScroll/HorizontalScroll.js'
 
 //- Assets
@@ -160,6 +161,9 @@ const ZNS = (props) => {
                     price={153.2}
                     priceInBtc={0.0042}
                     change={-3.94}
+                />
+                <AssetGraphCard
+                    title='Wild Price'
                 />
                 <AssetMarketCapCard 
                     title='Total Wild Holders'
