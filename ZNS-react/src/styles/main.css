@@ -1,9 +1,24 @@
+/*
+ * @author Brett Collins
+ * 
+ * Search:
+ *  - Variables
+ *  - Default HTML Elements
+ *	- Custom HTML Elements
+ *	- Borders
+ *	- Glows / Shadows
+ *	- Effects
+ */
+
 /* 
-    Storing all CSS variables in here
-    Should be easy to switch global colours, and switching darkmode/lightmode
-*/
+ * Variables
+ * -- The design is likely to change, so let's use variables where we can
+ * to make changes a bit easier.
+ *
+ */
 :root {
     --font-size-default: 16px;
+	--font-family: 'Eurostile', sans-serif;
 
     --color-primary: #8C00FF;
     --color-accent-1: #3CA1FF;
@@ -14,6 +29,7 @@
     --color-warning: #F3BB1C;
     --color-error: #F03738;
     --color-grey: #808080;
+	--color-text-primary: #FFFFFF;
 
     --background-primary-button-fill: linear-gradient(148deg, #00407C 20.93%, #00203F 82.47%);
     --background-secondary-button-fill: #1E5180;
@@ -40,24 +56,15 @@
     --animation-time-long: 0.7s;
 }
 
-/* Not sure how you guys are handling fonts so I'll just use system font */
+/*
+ *
+ * Default HTML Elements 
+ *
+ */
+
 body, button, input {
-	font-family: 'Eurostile', sans-serif;
+	font-family: var(--font-family);
 	letter-spacing: 0.2px;
-}
-
-/* Set display: block; to enable overlay image */
-#check {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
-    z-index: 100;
-}
-
-.glow {
-	text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.4);
 }
 
 body {
@@ -73,27 +80,21 @@ body {
 	padding-top: 123px;
 	padding-bottom: 123px;
 
-	/* Breakpoint in Framer */
+	/* Currently the only breakpoint in Figma */
 	min-width: 1440px;
 
-	color: #cccccc;
+	color: var(--color-text-primary);
 }
 
 h1 {
 	font-size: 22px;
 }
 
-a {
-	cursor: pointer;
-}
-
-input {
-	border: none;
-}
-
-button {
-	cursor: pointer;
-}
+/*
+ *
+ * Custom HTML Elements 
+ *
+ */
 
 .content {
 	display: flex;
@@ -106,43 +107,46 @@ button {
 	flex: 1;
 }
 
-.purpleBackground {
-	background: radial-gradient(50% 50% at 50% 50%, rgba(107, 59, 209, 0) 0%, rgba(105, 3, 141, 0.33) 100%);
-}
+/*
+ *
+ * Borders 
+ *
+ */
 
-.gradientBorder {
-	border: 1px solid #AB6AFD;
-	/*border-image-source: linear-gradient(180deg, #AB6AFD 0%, rgba(93, 61, 160, 0.75) 100%);
-  	border-image-slice: 1;*/
+.border-primary {
+	border: 1px solid var(--color-primary);
   	border-collapse: separate;
 }
 
+/*
+ *
+ * Glows / Shadows
+ *
+ */
+
+.glow-box-accent-2 {
+	filter: drop-shadow(0px 0px 10px var(--color-accent-2));
+}
+
+.glow-text-white {
+	text-shadow: var(--glow-text-white)
+}
+
+.glow-text-blue {
+	text-shadow: var(--glow-text-blue)
+}
+
+/*
+ *
+ * Effects
+ *
+ */
+
+/* Blurs the background of the div */
 .blur {
 	backdrop-filter: blur(30px);
 	backdrop-webkit-filter: blur(30px);
 	backdrop-moz-filter: blur(30px);
 	backdrop-o-filter: blur(30px);
 	backdrop-ms-filter: blur(30px);
-}
-
-.purple-border-blur {
-	background: radial-gradient(50% 50% at 50% 50%, rgba(107, 59, 209, 0) 0%, rgba(105, 3, 141, 0.33) 100%);
-	border: 1px solid #AB6AFD;
-	/*border-image-source: linear-gradient(180deg, #AB6AFD 0%, rgba(93, 61, 160, 0.75) 100%);
-  	border-image-slice: 1;*/
-  	border-collapse: separate;
-  	backdrop-filter: blur(30px);
-	backdrop-webkit-filter: blur(30px);
-	backdrop-moz-filter: blur(30px);
-	backdrop-o-filter: blur(30px);
-	backdrop-ms-filter: blur(30px);
-}
-
-.haze {
-	height: 100vh;
-	width: 88px;
-	position: fixed;
-	right: 0;
-	top: 0;
-	background: linear-gradient(90deg, rgba(244, 93, 100, 0) 0%, rgba(244, 93, 100, 0.18) 100%);
 }
