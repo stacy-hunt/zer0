@@ -4,21 +4,20 @@ import { connect } from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 //- Components
-import TitleBar from '../../components/NavBars/TitleBar/TitleBar.js'
-import SearchBar from '../../components/SearchBar/SearchBar.js' // Search bar
-import FutureButton from '../../components/Buttons/FutureButton/FutureButton.js'
-import TextButton from '../../components/Buttons/TextButton/TextButton.js'
-import Overlay from '../../components/Overlay/Overlay.js'
-import ConnectToWallet from '../../components/ConnectToWallet/ConnectToWallet.js'
-import Profile from '../../components/Profile/Profile.js'
-/* Asset cards */
-import AssetPriceCard from'../../components/Cards/AssetCard/AssetPriceCard/AssetPriceCard.js'
-import AssetMarketCapCard from '../../components/Cards/AssetCard/AssetMarketCapCard/AssetMarketCapCard.js'
-import AssetGraphCard from '../../components/Cards/AssetCard/AssetGraphCard/AssetGraphCard.js'
-import HorizontalScroll from '../../components/HorizontalScroll/HorizontalScroll.js'
-/* Banners */
-import NextDrop from '../../components/Banners/NextDrop/NextDrop.js'
-
+import { 
+    AssetGraphCard,
+    AssetMarketCapCard,
+    AssetPriceCard,
+    ConnectToWallet,
+    FutureButton,
+    HorizontalScroll,
+    TextButton,
+    TitleBar,
+    NextDrop,
+    Overlay,
+    Profile,
+    SearchBar,
+} from '../../components/index.js'
 
 //- Assets
 import logo from '../../assets/wilderverse.png'
