@@ -1,7 +1,7 @@
 import React from 'react'
 
 import AssetCard from '../AssetCard.js'
-import TextButton from '../../../Buttons/TextButton/TextButton.js'
+import { TextButton }  from 'components' 
 
 import styles from './AssetGraphCard.module.css'
 

@@ -17,13 +17,13 @@ import {
     Overlay,
     Profile,
     SearchBar,
-} from '../../components/index.js'
+} from 'components'
 
 //- Assets
-import logo from '../../assets/wilderverse.png'
-import ProfileIcon from '../../assets/profile-icon.svg'
-import ShopIcon from '../../assets/shop-icon.svg'
-import WalletIcon from '../../assets/wallet-icon.svg'
+import logo from 'assets/wilderverse.png'
+import ProfileIcon from 'assets/profile-icon.svg'
+import ShopIcon from 'assets/shop-icon.svg'
+import WalletIcon from 'assets/wallet-icon.svg'
 
 const tableData = [
     {
