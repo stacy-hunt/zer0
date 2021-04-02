@@ -11,6 +11,7 @@ import {
     ConnectToWallet,
     FutureButton,
     HorizontalScroll,
+    AssetListTable,
     TextButton,
     TitleBar,
     NextDrop,
@@ -28,67 +29,36 @@ import WalletIcon from 'assets/wallet-icon.svg'
 const tableData = [
     {
         'asset': '../assets/wilder.jpg',
-        'name': 'Coronalisa',
-        'volume': 1200.15,
-        'changeDay': -4.02,
+        'name': 'Cy-cat',
+        'ticker': 'CCAT',
+        'changeDay': 25.21,
+        'changeWeek': -3.12,
+        'marketCap': 2359643.01,
+        'volume': 253140.36,
+        'supply': 44112,
+        'trade': 12101.33,
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Frank-Wilder',
+        'ticker': 'FRNK',
+        'changeDay': 15.02,
         'changeWeek': 33.12,
-        'marketCap': 23589643.01,
-        'week': [
-            10,
-            10,
-            10,
-            10,
-            10,
-        ],
+        'marketCap': 239643.01,
+        'volume': 253140.36,
+        'supply': 443112,
         'trade': 12101.33,
     },
     {
         'asset': '../assets/wilder.jpg',
-        'name': 'Cyber Mo',
-        'volume': 3215.53,
-        'changeDay': -13.11,
-        'changeWeek': -1.12,
-        'marketCap': 12357325.01,
-        'week': [
-            10,
-            10,
-            10,
-            10,
-            10,
-        ],
-        'trade': 901.33,
-    },
-    {
-        'asset': '../assets/wilder.jpg',
-        'name': 'Coronalisa',
-        'volume': 7821.93,
-        'changeDay': 30.45,
-        'changeWeek': 50.60,
-        'marketCap': 6439025.01,
-        'week': [
-            10,
-            10,
-            10,
-            10,
-            10,
-        ],
+        'name': 'Neo-Wilder',
+        'ticker': 'NEO',
+        'changeDay': -5.02,
+        'changeWeek': 24.12,
+        'marketCap': 23543.01,
+        'volume': 253140.36,
+        'supply': 44302,
         'trade': 12101.33,
-    },
-    {
-        'asset': '../assets/wilder.jpg',
-        'name': 'Cyber Mo',
-        'volume': 12355.62,
-        'changeDay': -32.53,
-        'changeWeek': 15.26,
-        'marketCap': 5932015.01,
-        'week': [
-            10,
-            10,
-            10,
-            10,
-            10,
-        ],
-        'trade': 901.33,
     },
 ]
 
@@ -185,6 +155,10 @@ const ZNS = (props) => {
                 title='Futopia'
                 artist='Frank Wilder'
                 date={new Date(new Date().getTime() + (24 * 60 * 60 * 1000))}
+                style={{marginTop: 16}}
+            />
+            <AssetListTable
+                data={tableData}
                 style={{marginTop: 16}}
             />
         </div>

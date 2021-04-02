@@ -14,6 +14,7 @@ export { default as NextDrop } from './Banners/NextDrop/NextDrop.js'
 
 //- Buttons
 export { default as FutureButton } from './Buttons/FutureButton/FutureButton.js'
+export { default as IconButton } from './Buttons/IconButton/IconButton.js'
 export { default as TextButton } from './Buttons/TextButton/TextButton.js'
 
 //- Cards
@@ -24,6 +25,9 @@ export { default as AssetPriceCard } from './Cards/AssetCard/AssetPriceCard/Asse
 
 //- NavBars
 export { default as TitleBar } from './NavBars/TitleBar/TitleBar.js'
+
+//- Tables
+export { default as AssetListTable } from './Tables/AssetListTable/AssetListTable.js'
 
 //- Other
 export { default as BreadCrumb } from './BreadCrumb/BreadCrumb.js'
