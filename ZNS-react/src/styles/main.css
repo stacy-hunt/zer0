@@ -48,12 +48,18 @@
     --color-accent-1-50:rgba(60,161,255,0.5); 
     --color-accent-1-dark: #1E5180;
 	--color-accent-1-darker: #002F5B;
+	--color-accent-1-light: #A1D2FF;
+	--color-accent-1-lighter: #9ED0FF;
     --color-accent-2: #EB00FF;
     --color-success: #3CC13B;
     --color-warning: #F3BB1C;
     --color-error: #F03738;
     --color-grey: #808080;
 	--color-text-primary: #FFFFFF;
+
+	--color-green-2: #27AE60;
+
+	--color-red: #EB5757;
 
     --background-primary-button-fill: linear-gradient(148deg, #00407C 20.93%, #00203F 82.47%);
     --background-secondary-button-fill: #1E5180;
