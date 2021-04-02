@@ -1,5 +1,12 @@
 .textButton {
     color: var(--color-accent-1);
+    font-weight: 700;
+
+    display: flex;
+    align-items: center; 
+
+    padding-top: 3px;
+    padding-bottom: 0;
 
     background-color: rgba(0,0,0,0);
 

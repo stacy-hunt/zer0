@@ -5,6 +5,7 @@
     align-items: center;
 
     height: 32px;
+    padding-top: 4px;
     padding-left: 25px;
     padding-right: 25px;
 
@@ -46,6 +47,7 @@
     margin-right: 8px;
 
     font-size: var(--font-size-default);
+    font-weight: 700;
 
     color: var(--color-accent-1);
     text-shadow: var(--glow-text-blue);
