@@ -26,41 +26,75 @@ import ProfileIcon from 'assets/profile-icon.svg'
 import ShopIcon from 'assets/shop-icon.svg'
 import WalletIcon from 'assets/wallet-icon.svg'
 
+const getRand = (min, max, dp) => {
+    var rand = Math.random() < 0.5 ? ((1-Math.random()) * (max-min) + min) : (Math.random() * (max-min) + min);  // could be min or max or anything in between
+    var power = Math.pow(10, dp);
+    return Math.floor(rand*power) / power;
+}
+
 const tableData = [
     {
         'asset': '../assets/wilder.jpg',
         'name': 'Cy-cat',
         'ticker': 'CCAT',
-        'changeDay': 25.21,
-        'changeWeek': -3.12,
-        'marketCap': 2359643.01,
-        'volume': 253140.36,
-        'supply': 44112,
-        'trade': 12101.33,
     },
     {
         'asset': '../assets/wilder.jpg',
         'name': 'Frank-Wilder',
         'ticker': 'FRNK',
-        'changeDay': 15.02,
-        'changeWeek': 33.12,
-        'marketCap': 239643.01,
-        'volume': 253140.36,
-        'supply': 443112,
-        'trade': 12101.33,
     },
     {
         'asset': '../assets/wilder.jpg',
         'name': 'Neo-Wilder',
         'ticker': 'NEO',
-        'changeDay': -5.02,
-        'changeWeek': 24.12,
-        'marketCap': 23543.01,
-        'volume': 253140.36,
-        'supply': 44302,
-        'trade': 12101.33,
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Neo-Wilder',
+        'ticker': 'NEO',
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Bitcoin',
+        'ticker': 'BTC',
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Cardano',
+        'ticker': 'ADA',
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Fuse',
+        'ticker': 'FUSE',
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Monero',
+        'ticker': 'XMR',
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Ethereum',
+        'ticker': 'ETH',
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Nano',
+        'ticker': 'NANO',
     },
 ]
+
+// Generate some realistic looking data
+tableData.forEach(d => {
+    d.changeDay = getRand(-25, 25, 2)
+    d.changeWeek = getRand(-200, 200, 2)
+    d.trade = getRand(10, 11000, 2)
+    d.supply = getRand(1000, 15000, 0)
+    d.volume = getRand(d.supply/10, d.supply - (d.supply/10), 0)
+    d.value = getRand(d.supply/10, d.supply, 0)
+    d.marketCap = d.trade * d.supply
+})
 
 const offer = {
     "who": "Crypto Don",
@@ -125,13 +159,13 @@ const ZNS = (props) => {
             <HorizontalScroll>
                 <AssetPriceCard 
                     title='Wild Price'
-                    price={230.1}
+                    price={getRand(85, 400, 2)}
                     priceInBtc={0.0053}
                     change={12.03}
                 />
                 <AssetPriceCard 
                     title='Wild Price'
-                    price={153.2}
+                    price={getRand(85, 400, 2)}
                     priceInBtc={0.0042}
                     change={-3.94}
                 />
@@ -140,15 +174,15 @@ const ZNS = (props) => {
                 />
                 <AssetMarketCapCard 
                     title='Total Wild Holders'
-                    price={23024.52}
+                    price={getRand(15000, 40000, 2)}
                 />
                 <AssetMarketCapCard 
                     title='Total Wild Holders'
-                    price={23024.52}
+                    price={getRand(15000, 40000, 2)}
                 />
                 <AssetMarketCapCard 
                     title='Total Wild Holders'
-                    price={23024.52}
+                    price={getRand(15000, 40000, 2)}
                 />
             </HorizontalScroll>
             <NextDrop 
