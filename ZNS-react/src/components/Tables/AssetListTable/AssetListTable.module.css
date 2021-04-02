@@ -18,7 +18,9 @@
 
 .searchHeaderButtons {
 	display: flex;
+	flex: 1;
 	align-items: center;
+	justify-content: flex-end;
 }
 
 .search {
@@ -33,6 +35,10 @@
 }
 
 /* Table */
+.table tbody {
+	font-weight: 500;
+}
+
 .table th, .table td {
 	padding: 11px;
 	vertical-align: top;

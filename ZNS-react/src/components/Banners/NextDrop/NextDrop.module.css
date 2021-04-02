@@ -27,6 +27,7 @@
 
 .nextDrop h5 {
     font-size: 24px;
+    font-weight: 700;
 
     color: var(--color-accent-1);
 }
@@ -38,6 +39,8 @@
 .nextDrop p {
     margin-top: 12px;
     padding-bottom: 0;
+
+    font-weight: 700;
 }
 
 .nextDrop p > span {

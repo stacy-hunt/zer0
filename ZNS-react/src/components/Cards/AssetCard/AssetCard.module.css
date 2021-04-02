@@ -11,6 +11,7 @@
 
 .AssetCard h4 {
     color: var(--color-accent-1);
+    font-weight: 700;
 
     text-transform: uppercase;
 }

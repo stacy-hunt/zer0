@@ -50,8 +50,23 @@ const tableData = [
     },
     {
         'asset': '../assets/wilder.jpg',
-        'name': 'Neo-Wilder',
-        'ticker': 'NEO',
+        'name': 'Stellar',
+        'ticker': 'XLM',
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Dogecoin',
+        'ticker': 'DOGE',
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Dash',
+        'ticker': 'DASH',
+    },
+    {
+        'asset': '../assets/wilder.jpg',
+        'name': 'Maker',
+        'ticker': 'MKR',
     },
     {
         'asset': '../assets/wilder.jpg',
@@ -140,11 +155,9 @@ const ZNS = (props) => {
             { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}
             <TitleBar style={{marginTop: 30, paddingRight: 90, paddingLeft: 100}}>
                 <div>
-                    <TextButton toggleable={true}>Zero Networks</TextButton>
-                    <TextButton toggleable={true}>Members</TextButton>
                 </div>
                 <div>
-                    <SearchBar />
+                    <SearchBar style={{width: 243}}/>
                     { wallet && 
                         <>
                             <FutureButton click={openProfile}>Profile</FutureButton>
@@ -160,14 +173,14 @@ const ZNS = (props) => {
                 <AssetPriceCard 
                     title='Wild Price'
                     price={getRand(85, 400, 2)}
-                    priceInBtc={0.0053}
-                    change={12.03}
+                    priceInBtc={getRand(0.0001, 0.0090, 4)}
+                    change={getRand(-30, 30, 2)}
                 />
                 <AssetPriceCard 
                     title='Wild Price'
                     price={getRand(85, 400, 2)}
-                    priceInBtc={0.0042}
-                    change={-3.94}
+                    priceInBtc={getRand(0.0001, 0.0090, 4)}
+                    change={getRand(-30, 30, 2)}
                 />
                 <AssetGraphCard
                     title='Wild Price'

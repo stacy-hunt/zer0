@@ -17,7 +17,7 @@ const AssetListTable = (props) => {
             className={styles.tableContainer + ' border-primary border-rounded blur'}
         >
             <div className={styles.searchHeader}>
-                <SearchBar />
+                <SearchBar style={{width: 884}} />
                 <div className={styles.searchHeaderButtons}>
                     <IconButton toggleable={true} icon={list} style={{height: 32, width: 32}} />
                     <IconButton toggleable={true} icon={grid} style={{height: 32, width: 32}} />
@@ -26,7 +26,7 @@ const AssetListTable = (props) => {
             <table className={styles.table}>
                 <thead>
                     <tr>
-                        <th className={styles.center}>#</th>
+                        <th className={styles.left}>#</th>
                         <th className={styles.left}>Name</th>
                         <th className={styles.right}>24h</th>
                         <th className={styles.right}>7d</th>
@@ -48,7 +48,7 @@ const AssetListTable = (props) => {
                             <td className={styles.right}>${asset.volume.toFixed(2)}</td>
                             <td className={styles.right}>{asset.supply.toFixed(2)} {asset.ticker}</td>
                             <td className={styles.right} style={{padding: 0}}>{ /* <img style={{width: 148}} src={graph} /> */ }</td>
-                            <td className={styles.right}><FutureButton>{asset.trade}</FutureButton></td>
+                            <td className={styles.right}><FutureButton>${asset.trade}</FutureButton></td>
                         </tr>
                     )}
                 </tbody>

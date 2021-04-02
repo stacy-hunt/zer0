@@ -8,7 +8,7 @@
 	height: 32px;
 	background: var(--background-accent-1-gradient);
 	border-radius: 31px;
-	padding: 2px 24px 0 39px;
+	padding: 5px 24px 0 39px;
 
 	/* Text */
 	text-align: left;
@@ -22,7 +22,7 @@
 .searchBar button {
 	position: absolute;
 	left: 16px;
-	top: 10px;
+	top: 9px;
 	height: 14px;
 	width: 14px;
 	background-color: rgba(0,0,0,0);
