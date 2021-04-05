@@ -2,6 +2,12 @@ import React, { useState } from 'react'
 
 import styles from './FutureButtonStyle.module.css'
 
+/*
+ * Props:
+ * - click { function } - Callback for click events
+ * - toggleable { boolean } - Whether or not the button should have a 'selected' state 
+ */
+
 const FutureButton = (props) => {
 
     const [ hasHovered, setHovered ] = useState(false)
