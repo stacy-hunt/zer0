@@ -75,6 +75,8 @@
 
     --box-radius: 16px;
 
+	--width-max: 1250px;
+
     --stroke-primary-button: linear-gradient(180deg, #5F8CFF 0%, #002584 100%);
 
     --glow-primary: drop-shadow(0px 0px 10px 0px #EB00FF);
@@ -107,8 +109,9 @@ body {
 	min-height: 100vh;
 	height: auto;
 	width: 100%;
-	padding-top: 123px;
-	padding-bottom: 123px;
+	margin-top: 29px;
+	/* padding-top: 123px; */
+	/* padding-bottom: 123px; */
 
 	/* Currently the only breakpoint in Figma */
 	min-width: 1440px;
@@ -135,6 +138,14 @@ h1 {
 
 .main {
 	flex: 1;
+}
+
+.page-spacing {
+	position: relative;
+
+	max-width: var(--width-max);
+	min-width: var(--width-max);
+	margin: 0 auto;
 }
 
 /*

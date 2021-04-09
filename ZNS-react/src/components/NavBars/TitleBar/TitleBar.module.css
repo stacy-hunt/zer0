@@ -1,11 +1,10 @@
 header {
 	/* Not sure if it's an absolute or static header */
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
 	z-index: 10;
 
+	width: 100%;
+	min-width: var(--width-max);
+	max-width: var(--width-max);
 
 	/* Just here to illustrate the actual size of the header */
 	/*border-bottom: 1px solid black;*/
@@ -16,6 +15,8 @@ header {
 .TitleBar {
 	position: relative;
 	display: flex;
+
+	width: 100%;
 
 	padding: 11px 17px; 
 

@@ -166,10 +166,10 @@ const ZNS = (props) => {
     }
 
     return(
-        <div className='darkmode' style={{paddingLeft: 100, paddingRight: 88}}>
+        <div className='page-spacing'>
             { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
             { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}
-            <TitleBar style={{marginTop: 30, paddingRight: 90, paddingLeft: 100}}>
+            <TitleBar>
                 <div>
                 </div>
                 <div>
@@ -192,7 +192,7 @@ const ZNS = (props) => {
                 owner={previewData.owner}
                 description={previewData.description}
                 data={previewData}
-                style={{marginBottom: 16}}
+                style={{marginBottom: 16, marginTop: 24}}
                 img={previewData.img}
             />
             {/* <HorizontalScroll>
