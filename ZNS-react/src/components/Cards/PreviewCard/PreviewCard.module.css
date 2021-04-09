@@ -8,6 +8,8 @@
     height: var(--height);
 
     padding: 8px;
+
+    background: var(--background-purple-card-20);
 }
 
 .Asset {

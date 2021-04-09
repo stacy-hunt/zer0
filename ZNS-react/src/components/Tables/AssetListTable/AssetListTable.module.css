@@ -1,5 +1,6 @@
 .tableContainer {
 	width: 100%;
+	background: var(--background-purple-card-20);
 }
 
 .table {
