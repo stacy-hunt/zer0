@@ -1,5 +1,5 @@
 :root {
-    --height: 220px;
+    --height: 236px;
 }
 
 .PreviewCard {
@@ -11,7 +11,7 @@
 }
 
 .Asset {
-    width: 400px;
+    width: 398.33px;
 
     /* background-color: var(--background-purple-card); */
     background-size: cover;
@@ -26,7 +26,7 @@
     flex-direction: column;
 
     width: 562px;
-    margin: 8px 40px 12px 38px;
+    margin: 10px 40px 12px 36px;
 }
 
 .Body h5 {
@@ -41,7 +41,7 @@
 }
 
 .Body p {
-    margin-top: 16px;
+    margin-top: 20px;
     color: var(--color-accent-1-lighter);
     line-height: 19.2px;
 }
@@ -49,7 +49,7 @@
 .Members {
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    margin-top: 41px;
 }
 
 .Members > div {

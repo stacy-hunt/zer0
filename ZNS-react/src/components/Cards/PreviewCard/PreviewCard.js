@@ -6,8 +6,6 @@ import { FutureButton } from 'components'
 
 const PreviewCard = (props) => {
 
-    console.log(props.img)
-
     return(
         <div 
             className={`${styles.PreviewCard} border-primary border-rounded`}
@@ -48,7 +46,7 @@ const PreviewCard = (props) => {
                 </div>
             </div>
             <div className={styles.Buy}>
-                <FutureButton>BUY</FutureButton>
+                <FutureButton style={{height: 36, width: 118, borderRadius: 30}}>BUY</FutureButton>
                 <span className={`glow-text-blue`}>Last Offer</span>
                 <span className={`glow-text-white`}>W1.56 <span className={`glow-text-blue`}>($8,000)</span></span>
             </div>
