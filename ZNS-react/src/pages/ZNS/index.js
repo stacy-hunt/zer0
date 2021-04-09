@@ -18,6 +18,7 @@ import {
     Overlay,
     Profile,
     SearchBar,
+    PreviewCard,
 } from 'components'
 
 //- Assets
@@ -100,6 +101,21 @@ const tableData = [
     },
 ]
 
+const previewData = {
+    owner: {
+        domain: '0.cyber.n3o',
+        img: '/assets/wilderverse.png',
+    },
+    creator: { 
+        domain: '0.wilder.frank',
+        img: '/assets/wilderverse.png'
+    },
+    name: 'CoronaLisa',
+    domain: '0.wilder.frank.coronalisa',
+    description: 'It’s long been wondered why the Mona Lisa looks so sad. Perhaps she foresaw the current state of the world and empathised with us all.',
+    img: '/assets/nft-image-coronalisa.png'
+}
+
 // Generate some realistic looking data
 tableData.forEach(d => {
     d.changeDay = getRand(-25, 25, 2)
@@ -169,6 +185,16 @@ const ZNS = (props) => {
                     }
                 </div>
             </TitleBar>
+            <PreviewCard 
+                name={previewData.name}
+                domain={previewData.domain}
+                creator={previewData.creator}
+                owner={previewData.owner}
+                description={previewData.description}
+                data={previewData}
+                style={{marginBottom: 16}}
+                img={previewData.img}
+            />
             <HorizontalScroll>
                 <AssetPriceCard 
                     title='Wild Price'

@@ -8,6 +8,7 @@
 
 .filters {
     position: absolute;
+    display: flex;
     top: 21px;
     right: 15px;
 }
