@@ -11,10 +11,10 @@ const AssetPriceCard = (props) => {
         <AssetCard
             title={props.title}
         >
-            <h5 className={`${styles.price} glow-text-white`}>{`$${props.price.toFixed(2)}`}</h5>
+            <h5 className={`${styles.price} glow-text-white`}>{`$${Number(props.price.toFixed(2)).toLocaleString()}`}</h5>
             <div className={styles.bottom}>
-                <span>{`${props.priceInBtc.toFixed(4)} BTC`} </span>
-                <span className={props.change > 0 ? styles.positive : styles.negative}>{`(${props.change >= 0 ? '+' : ''}${props.change.toFixed(2)}%)`}</span>
+                <span>{`${Number(props.priceInBtc.toFixed(4)).toLocaleString()} BTC`} </span>
+                <span className={props.change > 0 ? styles.positive : styles.negative}>{`(${props.change >= 0 ? '+' : ''}${Number(props.change.toFixed(2)).toLocaleString()}%)`}</span>
             </div>
         </AssetCard>
     )

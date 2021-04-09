@@ -42,13 +42,13 @@ const AssetListTable = (props) => {
                         <tr key={i}>
                             <td className={styles.left}>{i + 1}</td>
                             <td className={styles.left}>{asset.name} <span className={styles.ticker}>{asset.ticker}</span></td>
-                            <td className={`${styles.right} ${asset.changeDay < 0 ? styles.negative : styles.positive}`}><span>{Math.abs(asset.changeDay.toFixed(2))}%</span><div></div></td>
-                            <td className={`${styles.right} ${asset.changeWeek < 0 ? styles.negative : styles.positive}`}><span>{Math.abs(asset.changeWeek.toFixed(2))}%</span><div></div></td>
-                            <td className={styles.right}>${asset.marketCap.toFixed(2)}</td>
-                            <td className={styles.right}>${asset.volume.toFixed(2)}</td>
-                            <td className={styles.right}>{asset.supply.toFixed(2)} {asset.ticker}</td>
+                            <td className={`${styles.right} ${asset.changeDay < 0 ? styles.negative : styles.positive}`}><span>{Number(Math.abs(asset.changeDay.toFixed(2))).toLocaleString()}%</span><div></div></td>
+                            <td className={`${styles.right} ${asset.changeWeek < 0 ? styles.negative : styles.positive}`}><span>{Number(Math.abs(asset.changeWeek.toFixed(2))).toLocaleString()}%</span><div></div></td>
+                            <td className={styles.right}>${Number(asset.marketCap.toFixed(2)).toLocaleString()}</td>
+                            <td className={styles.right}>${Number(asset.volume.toFixed(2)).toLocaleString()}</td>
+                            <td className={styles.right}>{Number(asset.supply.toFixed(2)).toLocaleString()} {asset.ticker}</td>
                             <td className={styles.right} style={{padding: 0}}>{ /* <img style={{width: 148}} src={graph} /> */ }</td>
-                            <td className={styles.right}><FutureButton>${asset.trade}</FutureButton></td>
+                            <td className={styles.right}><FutureButton>${Number(asset.trade).toLocaleString()}</FutureButton></td>
                         </tr>
                     )}
                 </tbody>
