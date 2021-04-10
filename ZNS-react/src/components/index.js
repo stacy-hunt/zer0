@@ -22,6 +22,7 @@ export { default as AssetCard } from './Cards/AssetCard/AssetCard.js'
 export { default as AssetGraphCard } from './Cards/AssetCard/AssetGraphCard/AssetGraphCard.js'
 export { default as AssetMarketCapCard } from './Cards/AssetCard/AssetMarketCapCard/AssetMarketCapCard.js'
 export { default as AssetPriceCard } from './Cards/AssetCard/AssetPriceCard/AssetPriceCard.js'
+export { default as NFTCard } from './Cards/NFTCard/NFTCard.js'
 export { default as PreviewCard } from './Cards/PreviewCard/PreviewCard.js'
 
 //- NavBars
