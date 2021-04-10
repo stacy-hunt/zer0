@@ -10,6 +10,7 @@ import {
     AssetPriceCard,
     ConnectToWallet,
     FutureButton,
+    FilterBar,
     HorizontalScroll,
     AssetListTable,
     TextButton,
@@ -19,6 +20,7 @@ import {
     Profile,
     SearchBar,
     PreviewCard,
+    SideBar
 } from 'components'
 
 //- Assets
@@ -101,6 +103,14 @@ const tableData = [
     },
 ]
 
+const globalFilters = [
+    'Zero Networks', 
+    'Members', 
+    'NFTs', 
+    'DAOs', 
+    'Universes',
+]
+
 const previewData = {
     owner: {
         domain: '0.cyber.n3o',
@@ -133,6 +143,7 @@ const offer = {
     "amountFiat": 123.45,
     "amountCrypto": 0.045,
 }
+
 
 
 const ZNS = (props) => {
@@ -169,6 +180,8 @@ const ZNS = (props) => {
         <div className='page-spacing'>
             { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
             { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}
+            <SideBar />
+            <FilterBar filters={globalFilters}>
             <TitleBar>
                 <div>
                 </div>
@@ -185,6 +198,7 @@ const ZNS = (props) => {
                     }
                 </div>
             </TitleBar>
+            </FilterBar>
             <PreviewCard 
                 name={previewData.name}
                 domain={previewData.domain}
