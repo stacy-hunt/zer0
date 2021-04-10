@@ -67,7 +67,9 @@
 
     --background-purple-card: #4E0084;
     --background-purple-card-20: rgba(78,0,132,0.2);
+	--background-purple-light-20: rgba(190,96,255,0.2);
 
+	--background-blue-deck: radial-gradient(56.93% 56.93% at 50% 50%, rgba(206, 183, 255, 0) 0%, rgba(103, 79, 255, 0.2) 100%);
     --background-blue-card: linear-gradient(92.24deg, rgba(0, 102, 255, 0.2) 0%, rgba(0, 63, 137, 0.2) 100%);
 
     --background-primary: rgba(78, 0, 132, 0.2);
@@ -142,7 +144,7 @@ h1 {
 }
 
 .page-spacing {
-	position: relative;
+	/* position: relative; */
 
 	max-width: var(--width-max);
 	min-width: var(--width-max);
