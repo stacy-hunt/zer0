@@ -15,6 +15,7 @@ const TextButton = (props) => {
         <button 
             onClick={handleClick}
             className={`${styles.textButton} ${(props.toggleable && selected) || props.selected ? styles.selected : ''}`}
+            style={props.style}
         >
             { props.children }
         </button>
