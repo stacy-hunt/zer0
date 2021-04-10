@@ -8,6 +8,7 @@ const TextButton = (props) => {
 
     const handleClick = () => {
         setSelected(!selected)
+        if(props.click) props.click()
     }
 
     return(
