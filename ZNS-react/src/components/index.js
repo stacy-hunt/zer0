@@ -25,6 +25,7 @@ export { default as AssetPriceCard } from './Cards/AssetCard/AssetPriceCard/Asse
 export { default as PreviewCard } from './Cards/PreviewCard/PreviewCard.js'
 
 //- NavBars
+export { default as FilterBar } from './NavBars/FilterBar/FilterBar.js'
 export { default as TitleBar } from './NavBars/TitleBar/TitleBar.js'
 
 //- Tables
