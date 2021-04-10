@@ -59,7 +59,7 @@
     margin-top: 16px;
 }
 
-.Foot > div:last-child {
+.Foot > div:not(:first-child) {
     text-align: right;
 }
 
