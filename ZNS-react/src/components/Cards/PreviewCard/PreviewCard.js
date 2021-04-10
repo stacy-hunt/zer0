@@ -8,7 +8,7 @@ const PreviewCard = (props) => {
 
     return(
         <div 
-            className={`${styles.PreviewCard} border-primary border-rounded`}
+            className={`${styles.PreviewCard} border-primary border-rounded blur`}
             style={props.style}
         >
             <div 
