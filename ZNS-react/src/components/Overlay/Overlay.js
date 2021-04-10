@@ -8,13 +8,15 @@ const Overlay = ({ close, children }) => {
 
 	return (
 		<div onClick={closeOverlay} style={{
-			width: '100%', height: '100vh', 
+			width: '100%', minHeight: '100vh', 
 			display: 'flex', alignItems: 'center', 
 			justifyContent: 'center',
-			position: 'fixed',
+			position: 'absolute',
 			top: 0,
 			left: 0,
 			zIndex: 100,
+			paddingTop: 120,
+			paddingBottom: 120
 		}} className='blur overlay'>
 			{children}
 		</div>
