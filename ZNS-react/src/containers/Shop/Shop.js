@@ -11,25 +11,31 @@ const Shop = (props) => {
 
     const loggedInAs = 'Frank Wilder'
     const [ NFTs, setNFTs ] = useState(NFTService.getOwnedBy(loggedInAs))
+    const [ selected, setSelected ] = useState('ownedBy')
+
+    console.log(selected)
 
     const getOwnedBy = () => {
         setNFTs(NFTService.getOwnedBy(loggedInAs))
+        setSelected('ownedBy')
     }
 
     const getCreatedBy = () => {
         setNFTs(NFTService.getCreatedBy(loggedInAs))
+        setSelected('createdBy')
+        console.log(selected)
     }
 
     return(
         <div className={styles.Shop}>
             <div className={styles.Sections}>
                 <TextButton 
-                    toggleable={true}
-                    click={getOwnedBy}
+                    onClick={getOwnedBy}
+                    selected={selected === 'ownedBy'}
                 >NFTs You Own</TextButton>
-                <TextButton 
-                    toggleable={true}
-                    click={getCreatedBy}
+                <TextButton
+                    onClick={getCreatedBy}
+                    selected={selected === 'createdBy'}
                 >NFTs You've Made</TextButton>
                 {/* <TextButton toggleable={true}>Offers</TextButton> */}
             </div>

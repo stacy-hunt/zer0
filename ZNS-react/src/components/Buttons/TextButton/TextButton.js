@@ -8,13 +8,13 @@ const TextButton = (props) => {
 
     const handleClick = () => {
         setSelected(!selected)
-        if(props.click) props.click()
+        if(props.onClick) props.onClick()
     }
 
     return(
         <button 
             onClick={handleClick}
-            className={`${styles.textButton} ${ props.toggleable && selected ? styles.selected : '' }`}
+            className={`${styles.textButton} ${(props.toggleable && selected) || props.selected ? styles.selected : ''}`}
         >
             { props.children }
         </button>
