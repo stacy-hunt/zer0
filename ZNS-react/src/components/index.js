@@ -25,6 +25,10 @@ export { default as AssetPriceCard } from './Cards/AssetCard/AssetPriceCard/Asse
 export { default as NFTCard } from './Cards/NFTCard/NFTCard.js'
 export { default as PreviewCard } from './Cards/PreviewCard/PreviewCard.js'
 
+//- Inputs
+export { default as TextInput } from './Inputs/TextInput/TextInput.js'
+export { default as ValidatedInput } from './Inputs/ValidatedInput/ValidatedInput.js'
+
 //- NavBars
 export { default as FilterBar } from './NavBars/FilterBar/FilterBar.js'
 export { default as TitleBar } from './NavBars/TitleBar/TitleBar.js'
@@ -42,7 +46,7 @@ export { default as Overlay } from './Overlay/Overlay.js'
 export { default as Profile } from './Profile/Profile.js'
 export { default as SearchBar } from './SearchBar/SearchBar.js'
 export { default as SideBar } from './SideBar/SideBar.js'
-export { default as ValidatedInput } from './ValidatedInput/ValidatedInput.js'
+export { default as ToggleSection } from './ToggleSection/ToggleSection.js'
 
 //- Progress Indicators
 export { default as StepBar } from './ProgressIndicators/StepBar/StepBar.js'
