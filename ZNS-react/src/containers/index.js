@@ -9,4 +9,5 @@
  *
  */
 
+export { default as MintNewNFT } from './MintNewNFT/MintNewNFT.js'
 export { default as Shop } from './Shop/Shop.js'

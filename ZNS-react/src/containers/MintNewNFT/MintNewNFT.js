@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import ValidatedInput from '../ValidatedInput/ValidatedInput.js'
+import { ValidatedInput } from 'components'
 
 import MintNewNFTStyle from './MintNewNFT.module.css'
 
