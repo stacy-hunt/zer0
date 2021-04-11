@@ -26,7 +26,7 @@ const MintNewNFT = (props) => {
 				steps={steps}
 			/>
 			<ToggleSection 
-				open={step === 1}
+				open={step === 1 ? true : undefined}
 				style={{marginTop: 51}}
 				label={'Token Information'}
 			>

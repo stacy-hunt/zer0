@@ -23,6 +23,10 @@ import {
     SideBar
 } from 'components'
 
+import {
+    MintNewNFT
+} from 'containers'
+
 //- Assets
 import logo from 'assets/wilderverse.png'
 import ProfileIcon from 'assets/profile-icon.svg'
@@ -148,7 +152,7 @@ const offer = {
 
 const ZNS = (props) => {
 
-    const [ overlay, setOverlay ] = useState('none')
+    const [ overlay, setOverlay ] = useState('mint')
     const [ wallet, setWallet ] = useState(false)
 
     const openProfile = () => {
@@ -178,6 +182,7 @@ const ZNS = (props) => {
 
     return(
         <div className='page-spacing'>
+            { overlay == 'mint' && <Overlay close={closeOverlay}><MintNewNFT /></Overlay> }
             { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
             { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}
             <SideBar />
