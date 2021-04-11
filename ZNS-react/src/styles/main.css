@@ -69,6 +69,8 @@
     --background-purple-card-20: rgba(78,0,132,0.2);
 	--background-purple-light-20: rgba(190,96,255,0.2);
 
+	--background-field-bg: linear-gradient(94.23deg, rgba(60, 161, 255, 0.2) 0%, rgba(30, 81, 128, 0.2) 100%);
+
 	--background-blue-deck: radial-gradient(56.93% 56.93% at 50% 50%, rgba(206, 183, 255, 0) 0%, rgba(103, 79, 255, 0.2) 100%);
     --background-blue-card: linear-gradient(92.24deg, rgba(0, 102, 255, 0.2) 0%, rgba(0, 63, 137, 0.2) 100%);
 
@@ -151,6 +153,13 @@ h1 {
 	margin: 0 auto;
 }
 
+.no-select {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
 /*
  *
  * Borders 
@@ -165,6 +174,10 @@ h1 {
 .border-rounded {
 	border-radius: 16px;
   	border-collapse: separate;
+}
+
+.border-blue {
+	border: 1px solid #88D7FF;
 }
 
 /*
