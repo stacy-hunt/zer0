@@ -44,6 +44,9 @@ export { default as SearchBar } from './SearchBar/SearchBar.js'
 export { default as SideBar } from './SideBar/SideBar.js'
 export { default as ValidatedInput } from './ValidatedInput/ValidatedInput.js'
 
+//- Progress Indicators
+export { default as StepBar } from './ProgressIndicators/StepBar/StepBar.js'
+
 //- To be implemented
 // export { default as CopyInput } from './CopyInput/CopyInput.js'
 // export { default as Table } from './Table/Table.js'

@@ -1,0 +1,14 @@
+.StepBar {
+    width: 100%;
+}
+
+.Bar {
+    padding-bottom: 4px;
+
+    font-size: 12px;
+    text-align: center;
+
+    border-bottom: 1px solid #E0BAFF;
+
+    transition: width var(--animation-time-medium) ease-in-out;
+}
