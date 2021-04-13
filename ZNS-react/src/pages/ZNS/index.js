@@ -152,7 +152,7 @@ const offer = {
 
 const ZNS = (props) => {
 
-    const [ overlay, setOverlay ] = useState('mint')
+    const [ overlay, setOverlay ] = useState('none')
     const [ wallet, setWallet ] = useState(false)
 
     const openProfile = () => {
