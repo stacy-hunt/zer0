@@ -214,7 +214,7 @@ const ZNS = (props) => {
                 style={{marginBottom: 16, marginTop: 24}}
                 img={previewData.img}
             />
-            {/* <HorizontalScroll>
+            <HorizontalScroll>
                 <AssetPriceCard 
                     title='Wild Price'
                     price={getRand(85, 400, 2)}
@@ -242,13 +242,13 @@ const ZNS = (props) => {
                     title='Total Wild Holders'
                     price={getRand(15000, 40000, 2)}
                 />
-            </HorizontalScroll> */}
-            {/* <NextDrop 
+            </HorizontalScroll>
+            <NextDrop 
                 title='Futopia'
                 artist='Frank Wilder'
                 date={new Date(new Date().getTime() + (24 * 60 * 60 * 1000))}
                 style={{marginTop: 16}}
-            /> */}
+            />
             <AssetListTable
                 data={tableData}
                 style={{marginTop: 16}}
