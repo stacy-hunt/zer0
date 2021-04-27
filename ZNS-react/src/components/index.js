@@ -15,6 +15,7 @@ export { default as NextDrop } from './Banners/NextDrop/NextDrop.js'
 //- Buttons
 export { default as FutureButton } from './Buttons/FutureButton/FutureButton.js'
 export { default as IconButton } from './Buttons/IconButton/IconButton.js'
+export { default as ProfileButton } from './Buttons/ProfileButton/ProfileButton.js'
 export { default as TextButton } from './Buttons/TextButton/TextButton.js'
 
 //- Cards

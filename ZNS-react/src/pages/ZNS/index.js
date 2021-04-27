@@ -24,7 +24,8 @@ import {
 } from 'components'
 
 import {
-    MintNewNFT
+    MintNewNFT,
+    Enlist
 } from 'containers'
 
 //- Assets
@@ -152,7 +153,7 @@ const offer = {
 
 const ZNS = (props) => {
 
-    const [ overlay, setOverlay ] = useState('none')
+    const [ overlay, setOverlay ] = useState('enlist')
     const [ wallet, setWallet ] = useState(false)
 
     const openProfile = () => {
@@ -182,6 +183,7 @@ const ZNS = (props) => {
 
     return(
         <div className='page-spacing'>
+            { overlay == 'enlist' && <Overlay close={closeOverlay}><Enlist /></Overlay> }
             { overlay == 'mint' && <Overlay close={closeOverlay}><MintNewNFT /></Overlay> }
             { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
             { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}

@@ -12,8 +12,8 @@ const FilterBar = (props) => {
         <div className={`${styles.FilterBar} blur`} style={props.style}>
             { props.children }
             <ul>
-                { props.filters.map(filter => 
-                    <li>
+                { props.filters.map((filter, index) => 
+                    <li key={index}>
                     <TextButton 
                         onClick={() => setSelected(filter)}
                         selected={selected === filter}
