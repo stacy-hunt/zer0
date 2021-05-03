@@ -153,7 +153,7 @@ const offer = {
 
 const ZNS = (props) => {
 
-    const [ overlay, setOverlay ] = useState('enlist')
+    const [ overlay, setOverlay ] = useState('')
     const [ wallet, setWallet ] = useState(false)
 
     const openProfile = () => {
@@ -183,7 +183,7 @@ const ZNS = (props) => {
 
     return(
         <div className='page-spacing'>
-            { overlay == 'enlist' && <Overlay close={closeOverlay}><Enlist /></Overlay> }
+            {/* { overlay == 'enlist' && <Overlay close={closeOverlay}><Enlist /></Overlay> }
             { overlay == 'mint' && <Overlay close={closeOverlay}><MintNewNFT /></Overlay> }
             { overlay == 'wallet' && <Overlay close={closeOverlay}><ConnectToWallet onConnect={connectWallet} /></Overlay> }
             { overlay == 'profile' && <Overlay close={closeOverlay}><Profile /></Overlay>}
@@ -254,7 +254,7 @@ const ZNS = (props) => {
             <AssetListTable
                 data={tableData}
                 style={{marginTop: 16}}
-            />
+            /> */}
         </div>
     )
 }
