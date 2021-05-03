@@ -111,9 +111,6 @@ const tableData = [
 const globalFilters = [
     'Zero Networks', 
     'Members', 
-    'NFTs', 
-    'DAOs', 
-    'Universes',
 ]
 
 const previewData = {
